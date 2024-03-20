@@ -1,28 +1,93 @@
+<!--This is my personal portfolio website started on the 19th of March 2024, everything is WIP-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/icon/favicon.ico" type="image/x-icon" />
     <title>Portfolio Website of Adrian Lesch</title>
 </head>
+
 <body>
     <header>
-        <h1>THIS IS THE START OF MY PORTFOLIO SITE</h1>
-        <figure>
-            <img src="./resources/images/AdrianLeschPortrait.jpg" alt="A portrait of Adrian Lesch">
-            <figcaption><strong>LOOK AT MY FACE</strong></figcaption>
-        </figure>
-        
-        
-        <nav></nav>
+        <!--Animated Header-->
+        <h1>Adrian Lesch</h1>
+        <div>
+            <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch">
+        </div>
+        <!--NavBar is supposed to be animated as well later-->
+        <nav>
+            <ul role="presentation">
+                <li><a href="">Biography</a></li>
+                <li><a href="">Curriculum Vitae</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
+    <!-- The idea is that the main section moves in a tetris like movement whilst scrolling-->
     <main>
+        <!--Biography-Section-->
+        <div>
+            <h2>Biography</h2>
+            <p>Adrian is a cool guy ...
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <!--CV-Section-->
+        <div>
+            <h2>Curriculum Vitae</h2>
+            <p>The stuff I've done for a living ...
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <!--Projects-Section-->
+        <div>
+            <h2>Projects</h2>
+            <p>The projects i've worked on in the past ...
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
     </main>
-
+    <!--Footer contains of Contact Section with an optional form to fill out and other contact information and methods-->
     <footer>
-        <form action=""></form>
+        <div>
+            <h2>Contact</h2>
+            <p>You can get in touch with me via...</p>
+            <form action="" method="get">
+                <div>
+                    <label for="name">Please enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Please enter your e-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Enter your message: </label>
+                    <input type="text" name="message" id="message" required>
+                </div>
+            </form>
+        </div>
     </footer>
-
 </body>
+
 </html>
