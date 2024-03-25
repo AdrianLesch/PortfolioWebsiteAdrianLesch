@@ -2,7 +2,7 @@
 ## Project description by Codecademy:
 
 ### Portfolio Website
-=================
+---------------------
 
 For this project, you will build a personal portfolio site, a static website where you can share the projects that you build in this Path.
 
@@ -11,7 +11,7 @@ Typically, a portfolio website will have a main page that features different pro
 Occasionally, there are additional pages for each project, detailing the technology used.
 
 ### Project Objectives:
-===================
+---------------------
 + Build a website using HTML, CSS
 + Add at least one interactive feature using JavaScript
 + Use Git version control
@@ -23,7 +23,7 @@ Occasionally, there are additional pages for each project, detailing the technol
 Buy a custom domain name and have it point to your GitHub Pages website
 
 Prerequisites:
---------------
+-------------
 HTML/CSS
 JavaScript
 Git and GitHub
