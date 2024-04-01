@@ -24,7 +24,7 @@
         </div>
         <!--NavBar is supposed to be animated as well later-->
         <nav>
-            <ul role="presentation">
+            <ul role="presentation" class="navBar">
                 <li><a href="">Biography</a></li>
                 <li><a href="">Curriculum Vitae</a></li>
                 <li><a href="">Skills</a></li>
@@ -163,7 +163,7 @@
                         <h4>Java Course - Codecademy</h4><a
                             href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
                             target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
-                                alt="A certificate of completion for a Java Course passed by Adrian Lesch"></a>
+                                alt="A certificate of completion for a Java Course passed by Adrian Lesch" id = "certificate"></a>
                         <p>June 2023 - September 2023</p>
                     </li>
                     <li>
@@ -259,7 +259,8 @@
             <div>
                 <p>Fantasy Name Generator/Mixed Messages Project</p>
                 <div class="flexProject">
-                    <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard.">
+                    <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
+                        class="projectImg">
                     <ul>
                         <li>Javascript</li>
                     </ul>
@@ -274,7 +275,8 @@
             <div>
                 <p>Paperknights-Club-Website</p>
                 <div class="flexProject">
-                    <img src="./resources/images/Paperknights.jpeg" alt="A picture of a paperknight fighting a dragon.">
+                    <img src="./resources/images/Paperknights.jpeg" alt="A picture of a paperknight fighting a dragon."
+                        class="projectImg">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -293,7 +295,8 @@
             <div>
                 <p>Cityplanner-Agency-Website</p>
                 <div class="flexProject">
-                    <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner.">
+                    <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner."
+                        class="projectImg">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -312,7 +315,7 @@
             <div>
                 <p>TeaCozy-Café-Website</p>
                 <div class="flexProject">
-                    <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy.">
+                    <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy." class="projectImg">
                     <ul>
                         <li>HMTL</li>
                         <li>CSS</li>
@@ -331,7 +334,8 @@
             <div>
                 <p>Website-Style-Guide</p>
                 <div class="flexProject">
-                    <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website.">
+                    <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website."
+                        class="projectImg">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -350,7 +354,7 @@
             <div>
                 <p>Cheat-O-Sheet</p>
                 <div class="flexProject">
-                    <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet.">
+                    <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet." class="projectImg">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -366,7 +370,8 @@
             <div>
                 <p>Python-Projects</p>
                 <div class="flexProject">
-                    <img src="./resources/images/PythonProjects.jpeg" alt="A picture of a Python-Symbols.">
+                    <img src="./resources/images/PythonProjects.jpeg"
+                        alt="A picture of a Python-Symbol and Codingpictures." class="projectImg">
                     <ul>
                         <li>Python</li>
                     </ul>
@@ -381,7 +386,8 @@
             <div>
                 <p>Other Projects</p>
                 <div class="flexProject">
-                    <img src="./resources/images/CodingProjects.png" alt="A picture of programm code.">
+                    <img src="./resources/images/CodingProjects.png" alt="A picture of programm code."
+                        class="projectImg">
                     <ul>
                         <li>Javascript</li>
                         <li>Other</li>
@@ -399,21 +405,24 @@
 
     <!--Footer contains a disclaimer and my coding-language skill set-->
     <footer>
-        <div>
+        <div class="contactSection">
             <h2>Contact</h2>
             <p>You can find me on:</p>
             <div class="flexSocial">
                 <a href="https://github.com/AdrianLesch" target="_blank"><img
-                        src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub-Logo"></a>
+                        src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub-Logo"
+                        class="socialMediaIcon"></a>
                 <a href="https://www.linkedin.com/in/adrian-lesch-522369170/" target="_blank"><img
-                        src="./resources/icon/SocialMedia/LI-In-Bug.png" alt="A LinkedIn Logo"></a>
+                        src="./resources/icon/SocialMedia/LI-In-Bug.png" alt="A LinkedIn Logo" id="linkedIn"></a>
                 <a href="https://www.codecademy.com/profiles/AlgoRhythmus" target="_blank"><img
-                        src="./resources/icon/SocialMedia/icons8-codecademy.png" alt="A Codecademy Logo"></a>
+                        src="./resources/icon/SocialMedia/icons8-codecademy.png" alt="A Codecademy Logo"
+                        class="socialMediaIcon"></a>
                 <a href="https://www.facebook.com/adrianlesch90" target="_blank"><img
-                        src="./resources/icon/SocialMedia/icons8-facebook-neu-48.png" alt="A Facebook Logo"></a>
+                        src="./resources/icon/SocialMedia/icons8-facebook-neu-48.png" alt="A Facebook Logo"
+                        class="socialMediaIcon"></a>
                 <a href="https://www.instagram.com/addi.lette?igsh=MXFzOXE2dmpucG9wdw%3D%3D&utm_source=qr"
                     target="_blank"><img src="./resources/icon/SocialMedia/Instagram_Glyph_Black.png"
-                        alt="A Instagram Logo"></a>
+                        alt="A Instagram Logo" class="socialMediaIcon"></a>
             </div>
 
             <p>Or contact me via e-mail: <a href="mailto:adrian.lesch@mail.de"><img

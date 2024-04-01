@@ -7,6 +7,8 @@
 89d2dc - Non Photo Blue
 */
 
+/* General-Styling */
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -21,4 +23,76 @@ html {
     text-align: center;
     background-color: #101d42;
     color: white;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+/* Header-Styling */
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Main-Styling */
+
+.flexMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexProject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #232ed1;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.subFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectImg {
+    height: 6rem;
+    width: 6rem;
+}
+
+#certificate {
+    display: none;
+}
+
+/* Footer-Styling */
+
+.contactSection {
+    background-color: white;
+    color: #0d1317;
+}
+
+.socialMediaIcon {
+    height: 3rem;
+    width: 3rem;
+}
+
+#linkedIn {
+    height: 3rem;
+    width: 3.4rem;
+}
+
+.flexBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
