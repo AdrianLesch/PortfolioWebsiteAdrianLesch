@@ -1,0 +1,24 @@
+/* Colors for styling:
+
+0d1317 - RichBlack
+101d42 - Oxford Blue
+232ed1 - Palatinate Blue
+6564db - Slate blue
+89d2dc - Non Photo Blue
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: center;
+    background-color: #101d42;
+    color: white;
+}
