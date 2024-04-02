@@ -18,10 +18,11 @@
 <body>
     <header>
         <!--Animated Header-->
-        <h1>Adrian Lesch</h1>
         <div>
-            <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch">
+            <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch"
+                id="portrait">
         </div>
+        <h1>Adrian Lesch</h1>
         <!--NavBar is supposed to be animated as well later-->
         <nav>
             <ul role="presentation" class="navBar">
@@ -37,7 +38,7 @@
     <main>
         <div class="flexMain">
             <!--Biography-Section-->
-            <section>
+            <section class="columns">
                 <h2>Biography</h2>
                 <p> Hi, I’m Adrian, a web developer passionate about crafting digital experiences. Currently, I’m on the
                     Fullstack Engineer Career Path at Codecademy. Welcome to the first iteration of my personal
@@ -91,7 +92,7 @@
             </section>
 
             <!--CV-Section-->
-            <section>
+            <section class="columns">
                 <h2>Curriculum Vitae</h2>
                 <ul>
                     <h3>Job Experience</h3>
@@ -163,7 +164,8 @@
                         <h4>Java Course - Codecademy</h4><a
                             href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
                             target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
-                                alt="A certificate of completion for a Java Course passed by Adrian Lesch" id = "certificate"></a>
+                                alt="A certificate of completion for a Java Course passed by Adrian Lesch"
+                                id="certificate"></a>
                         <p>June 2023 - September 2023</p>
                     </li>
                     <li>
@@ -256,150 +258,152 @@
         <section>
             <h2>Projects</h2>
             <!--This portfolio website itself was created as a "portfolio"-project for the Codecademy Fullstack-Engineer Career Path-->
-            <div>
-                <p>Fantasy Name Generator/Mixed Messages Project</p>
-                <div class="flexProject">
-                    <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
-                        class="projectImg">
-                    <ul>
-                        <li>Javascript</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/FanatsyNameGenerator---MixedMessages"
-                            target="_blank"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
+            <div class="wrapperProject">
+                <div>
+                    <p>Fantasy Name Generator/Mixed Messages Project</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
+                            class="projectImg">
+                        <ul>
+                            <li>Javascript</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/FanatsyNameGenerator---MixedMessages"
+                                target="_blank"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <p>Paperknights-Club-Website</p>
-                <div class="flexProject">
-                    <img src="./resources/images/Paperknights.jpeg" alt="A picture of a paperknight fighting a dragon."
-                        class="projectImg">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/The-Paper-Knights-Project" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                        <a href="https://adrianlesch.github.io/The-Paper-Knights-Project/
+                <div>
+                    <p>Paperknights-Club-Website</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/Paperknights.jpeg"
+                            alt="A picture of a paperknight fighting a dragon." class="projectImg">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/The-Paper-Knights-Project" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                            <a href="https://adrianlesch.github.io/The-Paper-Knights-Project/
                         " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
-                                alt="An icon for GitHubPages"></a>
+                                    alt="An icon for GitHubPages"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <p>Cityplanner-Agency-Website</p>
-                <div class="flexProject">
-                    <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner."
-                        class="projectImg">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/CityPlanner-Project" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                        <a href="https://adrianlesch.github.io/CityPlanner-Project/" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
-                                alt="A GitHub-Pages-Icon"></a>
+                <div>
+                    <p>Cityplanner-Agency-Website</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner."
+                            class="projectImg">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/CityPlanner-Project" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                            <a href="https://adrianlesch.github.io/CityPlanner-Project/" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
+                                    alt="A GitHub-Pages-Icon"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <p>TeaCozy-Café-Website</p>
-                <div class="flexProject">
-                    <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy." class="projectImg">
-                    <ul>
-                        <li>HMTL</li>
-                        <li>CSS</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/TeaCozyProject.github.io" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                        <a href="https://adrianlesch.github.io/TeaCozyProject.github.io/
+                <div>
+                    <p>TeaCozy-Café-Website</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy." class="projectImg">
+                        <ul>
+                            <li>HMTL</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/TeaCozyProject.github.io" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                            <a href="https://adrianlesch.github.io/TeaCozyProject.github.io/
                         " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
-                                alt="A GitHub-Pages icon."></a>
+                                    alt="A GitHub-Pages icon."></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <p>Website-Style-Guide</p>
-                <div class="flexProject">
-                    <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website."
-                        class="projectImg">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/codecademyWSS" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                        <a href="https://adrianlesch.github.io/codecademyWSS/
+                <div>
+                    <p>Website-Style-Guide</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website."
+                            class="projectImg">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/codecademyWSS" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                            <a href="https://adrianlesch.github.io/codecademyWSS/
                         " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
-                                alt=""></a>
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Cheat-O-Sheet</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet."
+                            class="projectImg">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/Cheat-O-Sheet.github.io" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Python-Projects</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/PythonProjects.jpeg"
+                            alt="A picture of a Python-Symbol and Codingpictures." class="projectImg">
+                        <ul>
+                            <li>Python</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/AdrianLesch/Python-Exercise-Projects" target="_blank"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Other Projects</p>
+                    <div class="flexProject">
+                        <img src="./resources/images/CodingProjects.png" alt="A picture of programm code."
+                            class="projectImg">
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Other</li>
+                        </ul>
+                        <div class="subFlex">
+                            <a href="https://github.com/stars/AdrianLesch/lists/additional-projects"
+                                target="_blank"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                    alt="An icon of a folder"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div>
-                <p>Cheat-O-Sheet</p>
-                <div class="flexProject">
-                    <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet." class="projectImg">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/Cheat-O-Sheet.github.io" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <p>Python-Projects</p>
-                <div class="flexProject">
-                    <img src="./resources/images/PythonProjects.jpeg"
-                        alt="A picture of a Python-Symbol and Codingpictures." class="projectImg">
-                    <ul>
-                        <li>Python</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/AdrianLesch/Python-Exercise-Projects" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <p>Other Projects</p>
-                <div class="flexProject">
-                    <img src="./resources/images/CodingProjects.png" alt="A picture of programm code."
-                        class="projectImg">
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Other</li>
-                    </ul>
-                    <div class="subFlex">
-                        <a href="https://github.com/stars/AdrianLesch/lists/additional-projects" target="_blank"><img
-                                src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
-                                alt="An icon of a folder"></a>
-                    </div>
-                </div>
-            </div>
-
         </section>
     </main>
 
