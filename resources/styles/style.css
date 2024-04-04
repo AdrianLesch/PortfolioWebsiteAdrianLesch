@@ -28,31 +28,60 @@ a {
     color: white;
 }
 
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
 header {
     background-color: #0d1317;
 }
 
 /* Header-Styling */
 
-
-
-.navBar {
+.headerFlex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #101d42;
+    flex-flow: row wrap;
 }
 
 #portrait {
     border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
 }
+
+.navBar {
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 2 1fr;
+    list-style: none;
+}
+
+.navBarLi {
+   width: 5rem;
+   height: 5rem;
+} 
+
+
+#skillsButton {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
 
 /* Main-Styling */
 
 .flexMain {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
