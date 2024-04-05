@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512"
-   height="512"
-   viewBox="0 0 512 512"
+   width="335.41605"
+   height="335.41605"
+   viewBox="0 0 335.41605 335.41605"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
@@ -44,22 +44,26 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:#474747;fill-opacity:1;paint-order:markers stroke fill"
-       id="rect20"
-       width="237.17497"
-       height="237.17497"
-       x="236.44902"
-       y="-123.72617"
-       transform="rotate(45)" />
-    <text
-       xml:space="preserve"
-       id="text20"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Sitka;-inkscape-font-specification:Sitka;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#ffffff;fill-opacity:1;paint-order:markers stroke fill"
-       transform="matrix(1.3425574,0,0,1.3425574,-27.235746,-58.485658)"><tspan
-         x="155.0957"
-         y="240.80664"
-         id="tspan2">Contact</tspan></text>
+     id="layer1"
+     transform="translate(-86.974289,-79.707092)">
+    <g
+       id="g1">
+      <rect
+         style="fill:#474747;fill-opacity:1;paint-order:markers stroke fill"
+         id="rect20"
+         width="237.17497"
+         height="237.17497"
+         x="236.44902"
+         y="-123.72617"
+         transform="rotate(45)" />
+      <text
+         xml:space="preserve"
+         id="text20"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Sitka;-inkscape-font-specification:Sitka;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#ffffff;fill-opacity:1;paint-order:markers stroke fill"
+         transform="matrix(1.3425574,0,0,1.3425574,-27.235746,-58.485658)"><tspan
+           x="155.0957"
+           y="240.80664"
+           id="tspan1">Contact</tspan></text>
+    </g>
   </g>
 </svg>
