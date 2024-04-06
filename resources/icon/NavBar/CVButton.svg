@@ -34,7 +34,7 @@
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g1" />
   <defs
      id="defs1">
     <rect
@@ -62,18 +62,18 @@
       <text
          xml:space="preserve"
          id="text20"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.8076px;font-family:Sitka;-inkscape-font-specification:Sitka;text-align:center;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#ffffff;fill-opacity:1;paint-order:markers stroke fill"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.7526613px;font-family:Sitka;-inkscape-font-specification:Sitka;text-align:center;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#ffffff;fill-opacity:1;paint-order:markers stroke fill"
          transform="matrix(1.3425574,0,0,1.3425574,-81.595552,-73.868515)"
          inkscape:transform-center-x="-7.9278541"
          x="82.722282"
          y="0"><tspan
-           x="189.20764"
-           y="232.40603"
-           id="tspan1">Curriculum
+           x="171.65604"
+           y="239.41272"
+           id="tspan2">Curriculum
 </tspan><tspan
-           x="223.89915"
-           y="267.16552"
-           id="tspan4">Vitae</tspan></text>
+           x="216.25949"
+           y="284.10359"
+           id="tspan3">Vitae</tspan></text>
     </g>
   </g>
 </svg>

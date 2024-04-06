@@ -60,14 +60,14 @@ header {
 
 #portrait {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 .navBar {
     display: grid;
-    grid-template-rows: 5rem 5rem 5rem;
-    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5.5rem 5.5rem 5.5rem;
+    grid-template-columns: 5.5rem 5.5rem 5.5rem;
     list-style: none;
 }
 
@@ -107,20 +107,105 @@ header {
 
 .flexMain {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
+/*Bio & CV*/
 .columns {
     height: fit-content;
-    width: 30rem;
+    width: 50rem;
     padding: 2rem;
     text-align: left;
     background-color: #474747;
     border-radius: 1rem;
-
+    border: #0d1317 1px solid;
+    box-shadow: 10px 5px 5px #000000 ;
 }
 
+/*Skills-Section*/
+.skillsFlexWrapper {
+    display: flex;
+    padding: 2rem;
+    height: fit-content;
+    width: 50rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.softskillsFlex {
+    display: flex;
+    background-color: #474747;
+    border-radius: 1rem;
+    border: #0d1317 1px solid;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #000000 ;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-flow: column wrap;
+}
+
+.subWrapperSkills{
+    display: flex;
+    background-color: #474747;
+    border-radius: 1rem;
+    border: #0d1317 1px solid;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #000000 ;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-flow: row wrap;
+}
+
+/*
+.codingFlex {
+    background-color: #474747;
+    border: #0d1317 1px solid;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #000000 ;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+*/
+
+.codingFlex {
+    list-style: none;
+}
+
+/*
+.frameworkFlex {
+    background-color: #474747;
+    border: #0d1317 1px solid;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #000000 ;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-flow: column wrap;
+}
+*/
+
+.frameworkFlex {
+    list-style: none;
+}
+
+/*
+.toolsFlex {
+    background-color: #474747;
+    border: #0d1317 1px solid;
+    margin: 1rem;
+    box-shadow: 10px 5px 5px #000000 ;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-flow: column wrap;
+}
+*/
+
+.toolsFlex {
+    list-style: none;
+}
+
+/*Projects-Section*/
 .wrapperProject {
     display: flex;
     flex-direction: row;
@@ -138,6 +223,8 @@ header {
     margin: 1rem;
     height: fit-content;
     width: 25rem;
+    border: #0d1317 1px solid;
+    box-shadow: 10px 5px 5px #000000 ;
     border-radius: 1rem;
     list-style: none;
 }
