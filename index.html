@@ -27,13 +27,13 @@
         <!--NavBar is supposed to be animated as well later-->
         <nav class="navBar">
             <ul role="presentation" class="navBarLi">
-                <li><a href="">Biography</a></li>
+                <li><a href="#navOne">Biography</a></li>
                 <div class="navGrid">
-                    <li id="cv"><a href="">Curriculum</a>
+                    <li id="cv"><a href="#navTwo">Curriculum</a>
                     </li>
-                    <li id="skill"><a href="">Skills</a></li>
-                    <li id="project"><a href="">Projects</a></li>
-                    <li id="contact"><a href="">Contact</a></li>
+                    <li id="skill"><a href="#skillsStyle">Skills</a></li>
+                    <li id="project"><a href="#navFour">Projects</a></li>
+                    <li id="contact"><a href="#navFive">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
         <div class="flexMain">
             <!--Biography-Section-->
             <section>
-                <h2 class="index">Biography</h2>
+                <h2 class="index" id="navOne">Biography</h2>
                 <div class="columns" id="biography">
                     <p> Hi, I’m Adrian, a web developer passionate about crafting digital experiences. Currently, I’m on
                         the
@@ -53,10 +53,10 @@
                         connect
                         with me.
                     </p>
-
+                    <br>
                     <ul>
                         <li>
-                            <h3>Journey:</h3>
+                            <h4>Journey:</h4>
                             <p>As a child, I was drawn to computers—not just for gaming, but for creating. I vividly
                                 remember
                                 tinkering
@@ -70,8 +70,9 @@
                                 photography
                                 editing skills.</p>
                         </li>
+                        <br>
                         <li>
-                            <h3>Coding Adventure Redux:</h3>
+                            <h4>Coding Adventure Redux:</h4>
                             <p>After a detour into various sales positions, I felt the pull back to software and web
                                 development.
                                 In September 2023, I embarked on the Fullstack Engineer Career Path.
@@ -82,14 +83,16 @@
                                 flame, so I've been actively coding again since ***PLACEHOLDER
                                 COUNTER***<!--Timecounter Script-->.</p>
                         </li>
+                        <br>
                         <li>
-                            <h3>The Present:</h3>
+                            <h4>The Present:</h4>
                             <p>Now, I’m diving headfirst into full-stack web development. My journey has been a blend of
                                 passion,
                                 persistence, and pixels.</p>
                         </li>
+                        <br>
                         <li>
-                            <h3>Explore My Work:</h3>
+                            <h4>Explore My Work:</h4>
                             <p>My interactive portfolio houses responsive websites, dynamic web apps, and more. Each
                                 project
                                 tells
@@ -105,16 +108,17 @@
 
             <!--CV-Section-->
             <section>
-                <h2 class="index">Curriculum Vitae</h2>
-                <div class="columns">
+                <h2 class="index" id="navTwo">Curriculum Vitae</h2>
+                <div class="columns" id="cv">
                     <ul>
-                        <h3>Job Experience</h3>
+                        <h3><u>Job Experience</u></h3>
+                        <br>
+                        <h4>Ingram Micro Distribution GmbH</h4>
+                        <h5>IT Distributor Hardware&Software</h5>
+                        <p><em>Partner Sales Manager</em> /
+                            January
+                            2023 - now</p>
                         <li>
-                            <h4>Ingram Micro Distribution GmbH</h4>
-                            <h5>IT Distributor Hardware&Software</h5>
-                            <p><em>Partner Sales Manager</em> /
-                                January
-                                2023 - now</p>
                             <ul>
                                 <li>Customer consulting specialized in Microsoft Cloud&Software licensing</li>
                                 <li>New customer acquisition</li>
@@ -122,11 +126,12 @@
                                 <li>Inbound Sales</li>
                             </ul>
                         </li>
+                        <br>
+                        <h4>Ambient Recording GmbH</h4>
+                        <h5>Manufacturer and dealer of professional soundequipment and Timecode-Generators for
+                            movie&series production</h5>
+                        <p><em>External Sales Manager</em> / February 2020 - December 2022</p>
                         <li>
-                            <h4>Ambient Recording GmbH</h4>
-                            <h5>Manufacturer and dealer of professional soundequipment and Timecode-Generators for
-                                movie&series production</h5>
-                            <p><em>External Sales Manager</em> / February 2020 - December 2022</p>
                             <ul>
                                 <li>Customer consulting for Timecode-Generators, Boompoles, Sound Recorders and
                                     accessories
@@ -137,63 +142,58 @@
                                 <li>Technical support</li>
                             </ul>
                         </li>
+                        <br>
+                        <h4>Lockit Network GmbH</h4>
+                        <h5>Co-Company of Ambient Recording GmbH / Developer of LockitScript App for Movie&Series
+                            Procution</h5>
+                        <p><em>Inbound Sales Manager</em> / February 2020 - December 2022</p>
                         <li>
-                            <h4>Lockit Network GmbH</h4>
-                            <h5>Co-Company of Ambient Recording GmbH / Developer of LockitScript App for Movie&Series
-                                Procution</h5>
-                            <p><em>Inbound Sales Manager</em> / February 2020 - December 2022</p>
                             <ul>
                                 <li>Inbound sales</li>
                                 <li>Technical support</li>
                                 <li>New customer acquisition</li>
                             </ul>
                         </li>
+                        <br>
+                        <h4>Ströer Deutsche Städte Medien GmbH</h4>
+                        <h5>Out-Of-Home-Advertisement Company</h5>
+                        <p><em>Inbound Sales Manager</em> / February 2019 - January 2020 <br> <em>Sales Trainee</em>
+                            /
+                            November 2018 - January 2019</p>
                         <li>
-                            <h4>Ströer Deutsche Städte Medien GmbH</h4>
-                            <h5>Out-Of-Home-Advertisement Company</h5>
-                            <p><em>Inbound Sales Manager</em> / February 2019 - January 2020 <br> <em>Sales Trainee</em>
-                                /
-                                November 2018 - January 2019</p>
                             <ul>
                                 <li>Inbound sales</li>
                                 <li>Planning of simple campaigns and management of production of advertising media</li>
                                 <li>New customer acquisition</li>
                             </ul>
                         </li>
-                        <li>
-                            <h4>Mars GmbH</h4>
-                            <h5>Gastronomy</h5>
-                            <p><em>Barkeeper</em> / November 2012 - October 2018</p>
-                        </li>
-                        <li>
-                            <h4>Just Music GmbH</h4>
-                            <h5>Musical instrument retailer</h5>
-                            <p><em>Retail Salesman</em> / July 2012 - August 2013</p>
-                        </li>
                     </ul>
-                    <ul>
-                        <h3>Education & Certifications</h3>
-                        <li>
-                            <h4>Full-Stack Engineer - Codecademy Career Path</h4>
-                            <p>September 2023 - in progress</p>
-                        </li>
-                        <li>
-                            <h4>Java Course - Codecademy</h4><a
-                                href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
-                                target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
-                                    alt="A certificate of completion for a Java Course passed by Adrian Lesch"
-                                    id="certificate"></a>
-                            <p>June 2023 - September 2023</p>
-                        </li>
-                        <li>
-                            <h4>Media Informatics - Ludwig-Maximilians University Munich</h4>
-                            <p><em>Bachelor</em> / September 2014 - December 2017</p>
-                        </li>
-                        <li>
-                            <h4>Retail Salesman - Just Music GmbH</h4>
-                            <p><em>Trainee</em> / September 2010 - July 2012</p>
-                        </li>
-                    </ul>
+                    <br>
+                    <h4>Mars GmbH</h4>
+                    <h5>Gastronomy</h5>
+                    <p><em>Barkeeper</em> / November 2012 - October 2018</p>
+                    <br>
+                    <h4>Just Music GmbH</h4>
+                    <h5>Musical instrument retailer</h5>
+                    <p><em>Retail Salesman</em> / July 2012 - August 2013</p>
+                    <br>
+                    <h3><u>Education & Certifications</u></h3>
+                    <br>
+                    <h4>Full-Stack Engineer - Codecademy Career Path</h4>
+                    <p>September 2023 - in progress</p>
+                    <br>
+                    <h4>Java Course - Codecademy</h4><a
+                        href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
+                        target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
+                            alt="A certificate of completion for a Java Course passed by Adrian Lesch"
+                            id="certificate"></a>
+                    <p>June 2023 - September 2023</p>
+                    <br>
+                    <h4>Media Informatics - Ludwig-Maximilians University Munich</h4>
+                    <p><em>Bachelor</em> / September 2014 - December 2017</p>
+                    <br>
+                    <h4>Retail Salesman - Just Music GmbH</h4>
+                    <p><em>Trainee</em> / September 2010 - July 2012</p>
                 </div>
             </section>
 
@@ -201,7 +201,8 @@
             <section class="skillsFlexWrapper">
                 <h2 class="index" id="skillsStyle">Skills</h2>
                 <div class="softskillsFlex">
-                    <h3>Softskills</h3>
+                    <h3><u>Softskills</u></h3>
+                    <br>
                     <ul>
                         <li>
                             <h4>Curiousity:</h4>
@@ -237,43 +238,50 @@
                         </li>
                     </ul>
                 </div>
-                <div class="line"><hr></div>
-                <div class="line"><hr> &#176;</div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="line">
+                    <hr> &#176;
+                </div>
                 <div class="subWrapperSkills">
                     <div class="skillsToolsBox">
-                        <h3>Coding Skills</h3>
+                        <h3><u>Coding<br>Skills</u></h3>
                         <ul class="codingFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png"
-                                    alt="A HTML icon" title="HTML"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon" title="CSS">
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png" alt="A HTML icon"
+                                    title="HTML"></li>
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon"
+                                    title="CSS">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-javascript-48.png"
                                     alt="A Javascript icon" title="Javascript"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png"
-                                    alt="A Java icon" title="Java"></li>
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png" alt="A Java icon"
+                                    title="Java"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-python-48.png"
                                     alt="A Python icon" title="Python">
                             </li>
                         </ul>
                     </div>
                     <div class="skillsToolsBox">
-                        <h3>Frameworks<br>& Libraries</h3>
+                        <h3><u>Frameworks</u></h3>
+                        <br>
                         <ul class="frameworkFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png"
-                                    alt="A React icon" title="React
-                                    (in progress)"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png"
-                                    alt="A Godot icon" title="Godot-Engine (Hobby)"></li>
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png" alt="A React icon"
+                                    title="React (in progress)"></li>
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png" alt="A Godot icon"
+                                    title="Godot-Engine (Hobby)"></li>
                         </ul>
                     </div>
 
                     <div class="skillsToolsBox">
-                        <h3>Tools</h3>
+                        <h3><u>Tools</u></h3>
+                        <br>
                         <ul class="toolsFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon" title="Git">
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon"
+                                    title="Git">
                             </li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-github-48.png"
-                                    alt="A GitHub icon" title="GitHub">
+                            <li><img src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub icon"
+                                    title="GitHub" id="gitHub">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-trello-48.png"
                                     alt="A Trello icon" title="Trello">
@@ -292,11 +300,11 @@
         </section>
         <!--Projects-Section-->
         <section>
-            <h2 class="index">Projects</h2>
+            <h2 class="index" id="navFour">Projects</h2>
             <!--This portfolio website itself was created as a "portfolio"-project for the Codecademy Fullstack-Engineer Career Path-->
             <div class="wrapperProject">
                 <div>
-                    <p>Fantasy Name Generator-Project</p>
+                    <h4>Fantasy Name Generator-Project</h4>
                     <div class="flexProject">
                         <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
                             class="projectImg">
@@ -312,7 +320,7 @@
                 </div>
 
                 <div>
-                    <p>Paperknights-Club-Website</p>
+                    <h4>Paperknights-Club-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/Paperknights.jpeg"
                             alt="A picture of a paperknight fighting a dragon." class="projectImg">
@@ -332,7 +340,7 @@
                 </div>
 
                 <div>
-                    <p>Cityplanner-Agency-Website</p>
+                    <h4>Cityplanner-Agency-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner."
                             class="projectImg">
@@ -352,7 +360,7 @@
                 </div>
 
                 <div>
-                    <p>TeaCozy-Café-Website</p>
+                    <h4>TeaCozy-Café-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy." class="projectImg">
                         <ul>
@@ -371,7 +379,7 @@
                 </div>
 
                 <div>
-                    <p>Website-Style-Guide</p>
+                    <h4>Website-Style-Guide</h4>
                     <div class="flexProject">
                         <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website."
                             class="projectImg">
@@ -391,7 +399,7 @@
                 </div>
 
                 <div>
-                    <p>Cheat-O-Sheet</p>
+                    <h4>Cheat-O-Sheet</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet."
                             class="projectImg">
@@ -408,7 +416,7 @@
                 </div>
 
                 <div>
-                    <p>Python-Projects</p>
+                    <h4>Python-Projects</h4>
                     <div class="flexProject">
                         <img src="./resources/images/PythonProjects.jpeg"
                             alt="A picture of a Python-Symbol and Codingpictures." class="projectImg">
@@ -424,7 +432,7 @@
                 </div>
 
                 <div>
-                    <p>Other Projects</p>
+                    <h4>Other Projects</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CodingProjects.png" alt="A picture of programm code."
                             class="projectImg">
@@ -443,10 +451,9 @@
         </section>
     </main>
 
-    <!--Footer contains a disclaimer and my coding-language skill set-->
     <footer>
         <div class="contactSection">
-            <h2>Contact</h2>
+            <h2 id="navFive">Contact</h2>
             <p>You can find me on:</p>
             <div class="flexSocial">
                 <a href="https://github.com/AdrianLesch" target="_blank"><img
@@ -471,7 +478,6 @@
 
         <!--Idea: Create a (slow) sidescrolling animation with a button to get back to the top of the side as a little game of skill-->
         <div class="flexBottom">
-
             <a target="_blank" href="https://icons8.com"><img
                     src="./resources/icon/CodinglanguagesIcons/icons8-icon-32.png" alt="A Icon icon"
                     title="Icons from Icon8"></a>
