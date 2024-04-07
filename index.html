@@ -25,19 +25,16 @@
             <h1>Adrian Lesch</h1>
         </div>
         <!--NavBar is supposed to be animated as well later-->
-        <nav>
-            <ul role="presentation" class="navBar">
-                <li id="bio"><a href=""><img src="./resources/icon/NavBar/BiographyButton.svg" alt="A Biography Button"
-                            class="navBarLi"></a></li>
-                <li id="cv"><a href=""><img src="./resources/icon/NavBar/CVButton.svg" alt="A C.V. Button"
-                            class="navBarLi"></a>
-                </li>
-                <li id="skill"><a href=""><img src="./resources/icon/NavBar/SkillsButton.svg" alt="A Skills Button"
-                            class="navBarLi"></a></li>
-                <li id="project"><a href=""><img src="./resources/icon/NavBar/ProjectsButton.svg" alt="A Project Button"
-                            class="navBarLi"></a></li>
-                <li id="contact"><a href=""><img src="./resources/icon/NavBar/ContactButton.svg" alt="A Contact Button"
-                            class="navBarLi"></a></li>
+        <nav class="navBar">
+            <ul role="presentation" class="navBarLi">
+                <li><a href="">Biography</a></li>
+                <div class="navGrid">
+                    <li id="cv"><a href="">Curriculum</a>
+                    </li>
+                    <li id="skill"><a href="">Skills</a></li>
+                    <li id="project"><a href="">Projects</a></li>
+                    <li id="contact"><a href="">Contact</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -46,8 +43,8 @@
         <div class="flexMain">
             <!--Biography-Section-->
             <section>
-                <h2>Biography</h2>
-                <div class="columns">
+                <h2 class="index">Biography</h2>
+                <div class="columns" id="biography">
                     <p> Hi, I’m Adrian, a web developer passionate about crafting digital experiences. Currently, I’m on
                         the
                         Fullstack Engineer Career Path at Codecademy. Welcome to the first iteration of my personal
@@ -108,18 +105,18 @@
 
             <!--CV-Section-->
             <section>
-                <h2>Curriculum Vitae</h2>
+                <h2 class="index">Curriculum Vitae</h2>
                 <div class="columns">
                     <ul>
                         <h3>Job Experience</h3>
                         <li>
                             <h4>Ingram Micro Distribution GmbH</h4>
                             <h5>IT Distributor Hardware&Software</h5>
-                            <p><em>Partner Sales Manager</em> -- specialized in Microsoft Cloud&Software licensing /
+                            <p><em>Partner Sales Manager</em> /
                                 January
                                 2023 - now</p>
                             <ul>
-                                <li>Customer consulting for the topics Microsoft Security and Biz Apps</li>
+                                <li>Customer consulting specialized in Microsoft Cloud&Software licensing</li>
                                 <li>New customer acquisition</li>
                                 <li>Customer success management</li>
                                 <li>Inbound Sales</li>
@@ -202,7 +199,7 @@
 
             <!--Skills-Section-->
             <section class="skillsFlexWrapper">
-                <h2>Skills</h2>
+                <h2 class="index" id="skillsStyle">Skills</h2>
                 <div class="softskillsFlex">
                     <h3>Softskills</h3>
                     <ul>
@@ -240,52 +237,54 @@
                         </li>
                     </ul>
                 </div>
+                <div class="line"><hr></div>
+                <div class="line"><hr> &#176;</div>
                 <div class="subWrapperSkills">
-                    <div>
+                    <div class="skillsToolsBox">
                         <h3>Coding Skills</h3>
                         <ul class="codingFlex">
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png"
-                                    alt="A HTML icon">HTML</li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon">CSS
+                                    alt="A HTML icon" title="HTML"></li>
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon" title="CSS">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-javascript-48.png"
-                                    alt="A Javascript icon">Javascript</li>
+                                    alt="A Javascript icon" title="Javascript"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png"
-                                    alt="A Java icon">Java</li>
+                                    alt="A Java icon" title="Java"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-python-48.png"
-                                    alt="A Python icon">Python
+                                    alt="A Python icon" title="Python">
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>Frameworks & Libraries</h3>
+                    <div class="skillsToolsBox">
+                        <h3>Frameworks<br>& Libraries</h3>
                         <ul class="frameworkFlex">
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png"
-                                    alt="A React icon">React
-                                (in progress)</li>
+                                    alt="A React icon" title="React
+                                    (in progress)"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png"
-                                    alt="A Godot icon">Godot-Engine (Hobby)</li>
+                                    alt="A Godot icon" title="Godot-Engine (Hobby)"></li>
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="skillsToolsBox">
                         <h3>Tools</h3>
                         <ul class="toolsFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon">Git
+                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon" title="Git">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-github-48.png"
-                                    alt="A GitHub icon">GitHub
+                                    alt="A GitHub icon" title="GitHub">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-trello-48.png"
-                                    alt="A Trello icon">Trello
+                                    alt="A Trello icon" title="Trello">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-existieren-48.png"
-                                    alt="A Jira icon">Jira
+                                    alt="A Jira icon" title="Jira">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-zendesk-48.png"
-                                    alt="A Zendesk icon">Zendesk</li>
+                                    alt="A Zendesk icon" title="Zendesk"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-microsoft-power-apps-48.png"
-                                    alt="A MSFT PowerApps icon">PowerApps</li>
+                                    alt="A MSFT PowerApps icon" title="PowerApps"></li>
                         </ul>
                     </div>
                 </div>
@@ -293,11 +292,11 @@
         </section>
         <!--Projects-Section-->
         <section>
-            <h2>Projects</h2>
+            <h2 class="index">Projects</h2>
             <!--This portfolio website itself was created as a "portfolio"-project for the Codecademy Fullstack-Engineer Career Path-->
             <div class="wrapperProject">
                 <div>
-                    <p>Fantasy Name Generator/Mixed Messages Project</p>
+                    <p>Fantasy Name Generator-Project</p>
                     <div class="flexProject">
                         <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
                             class="projectImg">
