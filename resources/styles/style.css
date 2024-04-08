@@ -68,7 +68,21 @@ h4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    transition: 0.4;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
 }
+
+.navBar a:hover {
+    background-color: white;
+    transition: .4;
+    color: #000000;
+}
+
+
 
 #portrait {
     border-radius: 50%;
