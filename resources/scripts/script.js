@@ -5,8 +5,8 @@ window.onscroll = function () { navBarScroll() };
 function navBarScroll() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("main").style.marginTop = "265px";
-        document.getElementById("portrait").style.height = "0";
-        document.getElementById("portrait").style.width = "0";
+        document.getElementById("portrait").style.height = "0rem";
+        document.getElementById("portrait").style.width = "0rem";
         document.getElementById("navBar").style.display = "none";
         document.getElementById("name").style.fontSize = "2rem"
         document.getElementById("navButton").style.visibility = "visible";
@@ -19,7 +19,9 @@ function navBarScroll() {
         document.getElementById("portrait").style.display = "flex";
         document.getElementById("navBar").style.display = "flex";
         document.getElementById("navButton").style.transform = "rotate(45deg)";
+        document.getElementById("navButton").style.transition = "0.2s"
         document.getElementById("navButton").style.visibility = "hidden";
+        
     }
 }
 
