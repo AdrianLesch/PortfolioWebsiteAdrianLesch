@@ -68,7 +68,7 @@ h4 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    transition: 0.4;
+    align-items: center;
     position: fixed;
     top: 0;
     z-index: 99;
@@ -76,16 +76,20 @@ h4 {
     overflow: hidden;
 }
 
+
+
 #portrait {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
+    transition: 0.8s;
 }
 
 .navBar {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    transition: 0.8s;
 }
 
 .navBar a {
@@ -113,6 +117,11 @@ h4 {
     grid-column: 5rem 5rem 5rem;
 }
 
+#navbarIcon {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+}
 
 /*Gridding the NavBar*/
 
@@ -236,8 +245,8 @@ h4 {
 
 .wrapperProject {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: fit-content;
     justify-content: space-around;
     padding: .5rem;
     background-color: #E8E9EB;
@@ -258,6 +267,11 @@ h4 {
     width: 20rem;
     border: 4px solid black;
     box-shadow: 2px 5px 5px #000000;
+}
+
+.flexProject:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 
 .flexProject li {
@@ -297,11 +311,28 @@ h4 {
 .socialMediaIcon {
     height: 3rem;
     width: 3rem;
+    margin: .5rem;
+}
+
+.socialMediaIcon:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 
 #linkedIn {
     height: 3rem;
     width: 3.4rem;
+    margin: .5rem;
+}
+
+#linkedIn:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+#mailIcon:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
 }
 
 .flexBottom {
