@@ -3,20 +3,23 @@
 window.onscroll = function () { navBarScroll() };
 
 function navBarScroll() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("headerWrapper").style.transition = "0.5s";
-        document.getElementById("main").style.marginTop = "480px";
-        document.getElementById("portrait").style.display = "none";
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("main").style.marginTop = "265px";
+        document.getElementById("portrait").style.height = "0";
+        document.getElementById("portrait").style.width = "0";
         document.getElementById("navBar").style.display = "none";
         document.getElementById("name").style.fontSize = "2rem"
-        document.getElementById("navbarIcon").style.display = "inline-block";
-        document.getElementById("navbarIcon").style.right = "1rem";
+        document.getElementById("navButton").style.visibility = "visible";
+        document.getElementById("navButton").style.transform = "rotate(90deg)";
+        document.getElementById("headerWrapper").style.alignItems = "center";
     } else {
-        document.getElementById("headerWrapper").style.transition = "0.5s";
+        document.getElementById("portrait").style.height = "15rem";
+        document.getElementById("portrait").style.width = "15rem";
         document.getElementById("main").style.marginTop = "350px";
         document.getElementById("portrait").style.display = "flex";
         document.getElementById("navBar").style.display = "flex";
-        document.getElementById("navbarIcon").style.display = "none";
+        document.getElementById("navButton").style.transform = "rotate(45deg)";
+        document.getElementById("navButton").style.visibility = "hidden";
     }
 }
 

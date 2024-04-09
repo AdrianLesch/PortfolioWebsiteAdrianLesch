@@ -1,4 +1,5 @@
 <!--Hi! Thank you for reading my source code! This is my personal portfolio website started on the 19th of March 2024, everything is WIP-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,14 +18,15 @@
 </head>
 
 <body>
+    <!--Header & Navbar Section-->
     <header class="headerFlex" id="headerWrapper">
-
+        <!--Portrait-->
         <div>
             <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch"
                 id="portrait">
             <h1 id="name">Adrian Lesch</h1>
         </div>
-
+        <!--Navbar-->
         <nav class="navBar" id="navBar">
             <a href="#navOne">Biography</a>
             <div class="navGrid">
@@ -34,10 +36,11 @@
                 <a href="#navFive" id="contact">Contact</a>
             </div>
         </nav>
+        <!--Navbar Icon on Scroll or for small screens-->
+        <div class="navDropdown">
+            <button onclick="dropdownFunc()" class="navDropdown" id="navButton">| | |</button>
 
-
-        <img src="./resources/icon/NavBar/NavBarIcon48.png" alt="A navbar icon." id="navbarIcon">
-
+        </div>
     </header>
 
     <!--The sections will feature dropdown animations and hover effects-->
@@ -322,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Fantasy Name Generator Project-->
                 <div>
                     <h4>Fantasy Name Generator-Project</h4>
                     <div class="flexProject">
@@ -338,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Paperknights-Club-Website-->
                 <div>
                     <h4>Paperknights-Club-Website</h4>
                     <div class="flexProject">
@@ -358,7 +361,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Cityplanner-Agency-Website-->
                 <div>
                     <h4>Cityplanner-Agency-Website</h4>
                     <div class="flexProject">
@@ -378,7 +381,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--TeaCozy-Café-Website-->
                 <div>
                     <h4>TeaCozy-Café-Website</h4>
                     <div class="flexProject">
@@ -397,7 +400,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Website-Style-Guide-->
                 <div>
                     <h4>Website-Style-Guide</h4>
                     <div class="flexProject">
@@ -417,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Cheat-O-Sheet-Project-->
                 <div>
                     <h4>Cheat-O-Sheet</h4>
                     <div class="flexProject">
@@ -434,7 +437,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Python-Projects-->
                 <div>
                     <h4>Python-Projects</h4>
                     <div class="flexProject">
@@ -450,7 +453,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Other-Projects-->
                 <div>
                     <h4>Other Projects</h4>
                     <div class="flexProject">
@@ -475,12 +478,14 @@
         <div class="contactSection">
             <h2 id="navFive">Contact</h2>
             <p><strong>You can find me on:</strong></p>
+            <!--Social-Media-Icons-->
             <div class="flexSocial">
                 <a href="https://github.com/AdrianLesch" target="_blank"><img
-                        src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub-Logo"
-                        class="socialMediaIcon" title="GitHub"></a>
+                        src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub-Logo" class="socialMediaIcon"
+                        title="GitHub"></a>
                 <a href="https://www.linkedin.com/in/adrian-lesch-522369170/" target="_blank"><img
-                        src="./resources/icon/SocialMedia/LI-In-Bug.png" alt="A LinkedIn Logo" id="linkedIn" title="LinkedIn"></a>
+                        src="./resources/icon/SocialMedia/LI-In-Bug.png" alt="A LinkedIn Logo" id="linkedIn"
+                        title="LinkedIn"></a>
                 <a href="https://www.codecademy.com/profiles/AlgoRhythmus" target="_blank"><img
                         src="./resources/icon/SocialMedia/icons8-codecademy.png" alt="A Codecademy Logo"
                         class="socialMediaIcon" title="Codecademy"></a>
@@ -491,12 +496,11 @@
                     target="_blank"><img src="./resources/icon/SocialMedia/Instagram_Glyph_Black.png"
                         alt="A Instagram Logo" class="socialMediaIcon" title="Instagram"></a>
             </div>
-
+            <!--E-Mail-Contact-->
             <p><strong>Or contact me via e-mail:</strong> <a href="mailto:adrian.lesch@mail.de"><img
                         src="./resources/icon/SocialMedia/MSMAI001.PNG" alt="A Mail Icon" id="mailIcon"></a></p>
         </div>
-
-        <!--Idea: Create a (slow) sidescrolling animation with a button to get back to the top of the side as a little game of skill-->
+        <!--Bottom-Section-->
         <div class="flexBottom">
             <a target="_blank" href="https://icons8.com"><img
                     src="./resources/icon/CodinglanguagesIcons/icons8-icon-32.png" alt="A Icon icon"
@@ -505,10 +509,10 @@
             <a href="" target="_blank"><img src="./resources/icon/CodinglanguagesIcons/StylesheetIcon.png"
                     alt="A Stylesheet Icon" title="Click here to get to my stylesheet!"></a>
         </div>
-
         <!--Rollup back to the Top-Arrow tbd-->
     </footer>
 
+    <!--HEY THERE, THANKS FOR READING SO FAR! <3 CHECK OUT MY LINKED SCRIPT! FEEDBACK ALWAYS APPRECIATED!-->
 
     <script src="./resources/scripts/script.js"></script>
 
