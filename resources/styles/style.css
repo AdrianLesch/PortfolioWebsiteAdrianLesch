@@ -22,7 +22,7 @@ html {
     background-color: #362023;
     color: white;
     line-height: 1.5rem;
-    scroll-padding-top: 15rem;
+    scroll-padding-top: 20rem;
 }
 
 a {
@@ -47,8 +47,13 @@ a:active {
 
 header {
     background-color: #0d1317;
-    margin-bottom: 5rem;
     padding: 1.5rem;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
 }
 
 li {
@@ -57,7 +62,7 @@ li {
 
 main {
     margin: 1rem;
-    transition: 0.8s;
+    transition: 0.6s;
 }
 
 h4 {
@@ -69,13 +74,8 @@ h4 {
 .headerFlex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 100%;
-    overflow: hidden;
-    transition: 0.4s;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -84,13 +84,17 @@ h4 {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
-    transition: 0.2s;
+    transition: 0.1s;
+    margin: .5rem;
+}
+
+#name {
+    margin: .5rem
 }
 
 .navBar {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     transition: 0.4s;
 }
 
@@ -102,7 +106,8 @@ h4 {
     box-shadow: 2px 5px 5px #000000;
 }
 
-.navBar a:hover {
+.navBar a:hover,
+.navBar a:focus {
     background-color: white;
     transition: 0.4s;
     color: #000000;
@@ -121,26 +126,61 @@ h4 {
 
 .navDropdown {
     background-color: #0d1317;
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    display: none;
+    visibility: hidden;
 }
 
-#navButton {
-    text-decoration: none;
+.navDropdown a {
+    border: 1px white solid;
+    transition: 0.4s;
     padding: .5rem;
-    color: white;
-    font-size: 1rem;
+    margin-left: .5rem ;
+}
+
+.navDropdown a:hover, .navDropdown:focus {
+    background-color: white;
+    color: #000000;
+    transition: 0.2s;
+}
+
+.navDropdown a:active {
+    background-color: #FAF0CA;
+    transition: 0.0s;
+}
+/*
+#navButton {
     visibility: hidden;
     transition: 0.4s;
+    transform: rotate(90deg);
+    cursor: pointer;
 }
 
-/*
-#navbarIcon {
+.dropDownContent {
     display: none;
-    height: 2rem;
-    width: 2rem;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: fit-content;
 }
-*/
+
+.dropDownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownContent a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display:block;
+}
 
 /*Gridding the NavBar*/
 
@@ -288,7 +328,8 @@ h4 {
     box-shadow: 2px 5px 5px #000000;
 }
 
-.flexProject:hover {
+.flexProject:hover,
+.flexProject:focus {
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
@@ -333,7 +374,8 @@ h4 {
     margin: .5rem;
 }
 
-.socialMediaIcon:hover {
+.socialMediaIcon:hover,
+.socialMediaIcon:focus {
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
@@ -344,12 +386,14 @@ h4 {
     margin: .5rem;
 }
 
-#linkedIn:hover {
+#linkedIn:hover,
+#linkedIn:focus {
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
 
-#mailIcon:hover {
+#mailIcon:hover,
+#mailIcon:focus {
     transform: rotate(360deg);
     transition: 0.4s;
 }

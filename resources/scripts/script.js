@@ -3,27 +3,51 @@
 window.onscroll = function () { navBarScroll() };
 
 function navBarScroll() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById("main").style.marginTop = "265px";
         document.getElementById("portrait").style.height = "0rem";
         document.getElementById("portrait").style.width = "0rem";
         document.getElementById("navBar").style.display = "none";
-        document.getElementById("name").style.fontSize = "2rem"
-        document.getElementById("navButton").style.visibility = "visible";
-        document.getElementById("navButton").style.transform = "rotate(90deg)";
-        document.getElementById("headerWrapper").style.alignItems = "center";
+        document.getElementById("name").style.fontSize = "1.5rem";
+        document.getElementById("navDropdown").style.display = "flex";
+        document.getElementById("navDropdown").style.visibility = "visible";
     } else {
+        document.getElementById("main").style.marginTop = "350px";
         document.getElementById("portrait").style.height = "15rem";
         document.getElementById("portrait").style.width = "15rem";
-        document.getElementById("main").style.marginTop = "350px";
-        document.getElementById("portrait").style.display = "flex";
         document.getElementById("navBar").style.display = "flex";
-        document.getElementById("navButton").style.transform = "rotate(45deg)";
-        document.getElementById("navButton").style.transition = "0.2s"
-        document.getElementById("navButton").style.visibility = "hidden";
-        
+        document.getElementById("name").style.fontSize = "2.125rem";
+        document.getElementById("navDropdown").style.visibility = "hidden";
+        document.getElementById("navDropdown").style.display = "none";
     }
 }
+
+
+/*-----This is a function for the navicon dropdown menu-----*/
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+/*
+function dropdownFunc() {
+    document.getElementById("navBarDrop").classList.toggle("show");
+  }
+  
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.navDropDown')) {
+      let dropdowns = document.getElementsByClassName("dropDownContent");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+*/
+  
+
 
 /*-----This is my funciton for a timecalculator.
 This is used to calculate the seconds since I've started to code again.-----*/
