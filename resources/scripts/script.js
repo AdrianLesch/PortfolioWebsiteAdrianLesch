@@ -9,16 +9,16 @@ function navBarScroll() {
         document.getElementById("portrait").style.width = "0rem";
         document.getElementById("navBar").style.display = "none";
         document.getElementById("name").style.fontSize = "1.5rem";
-        document.getElementById("navDropdown").style.display = "flex";
-        document.getElementById("navDropdown").style.visibility = "visible";
+        document.getElementById("navDropBtn").style.transform = "rotate(90deg)";
+        document.getElementById("navDropBtn").style.visibility = "visible";
     } else {
         document.getElementById("main").style.marginTop = "350px";
         document.getElementById("portrait").style.height = "15rem";
         document.getElementById("portrait").style.width = "15rem";
         document.getElementById("navBar").style.display = "flex";
         document.getElementById("name").style.fontSize = "2.125rem";
-        document.getElementById("navDropdown").style.visibility = "hidden";
-        document.getElementById("navDropdown").style.display = "none";
+        document.getElementById("navDropBtn").style.visibility = "hidden";
+        document.getElementById("navDropBtn").style.transform = "rotate(50deg)";
     }
 }
 
@@ -27,25 +27,23 @@ function navBarScroll() {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-/*
-function dropdownFunc() {
-    document.getElementById("navBarDrop").classList.toggle("show");
-  }
-  
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.navDropDown')) {
-      let dropdowns = document.getElementsByClassName("dropDownContent");
-      for (let i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+function navDropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
   }
-*/
+}
   
 
 
