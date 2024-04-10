@@ -44,8 +44,6 @@ window.onclick = function(event) {
     }
   }
 }
-  
-
 
 /*-----This is my funciton for a timecalculator.
 This is used to calculate the seconds since I've started to code again.-----*/
@@ -68,5 +66,16 @@ function dateClock() {
 /*This is the interval in which the "dateClock"-function is supposed to run (in milliseconds)*/
 const interval = setInterval(dateClock, 1000);
 
+/*-----This is a function for the CV-Dropdown button-----*/
 
+function dropButtonCV() {
+  const dropClass = document.getElementsByClassName("dropCV");
+
+  for (const element of dropClass) {
+    if (document.getElementById("dropButCV").onclick){
+      element.style.display = "block";
+      document.getElementById("cv").style.listStyle ="square";
+    }
+  }
+}
 

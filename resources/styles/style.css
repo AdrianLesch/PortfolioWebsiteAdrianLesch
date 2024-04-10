@@ -127,8 +127,9 @@ h4 {
 }
 
 
-/*Test-Dropdown*/
-/* Dropdown Button */
+
+/* Dropdown Button for NavBar */
+
 .dropbtn {
     background-color: #0d1317;
     color: white;
@@ -139,110 +140,55 @@ h4 {
     cursor: pointer;
     transition: 0.4s;
     visibility: hidden;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: #FAF0CA;
     color: #000000;
     transition: 0.4s;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-    float: right;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-
-/*
-.navDropdown {
-    background-color: #0d1317;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: .5rem;
-    display: none;
-    visibility: hidden;
-}
-
-.navDropdown a {
-    border: 1px white solid;
-    transition: 0.4s;
-    padding: .5rem;
-    margin-left: .5rem ;
-}
-
-.navDropdown a:hover, .navDropdown:focus {
-    background-color: white;
-    color: #000000;
-    transition: 0.2s;
-}
-
-.navDropdown a:active {
-    background-color: #FAF0CA;
-    transition: 0.0s;
-}
-
-*/
-
-/*
-#navButton {
-    visibility: hidden;
-    transition: 0.4s;
-    transform: rotate(90deg);
-    cursor: pointer;
-}
-
-.dropDownContent {
-    display: none;
-    position: absolute;
-    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: fit-content;
 }
 
-.dropDownContent a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropDownContent a:hover {
+@media only screen and (max-width: 600px) {
+    .dropdown {
+        float: right;
+    }
+
+    .dropdown-content {
+        margin-top: 0.2rem;
+        right: 0;
+    }
+}
+
+.dropdown-content a:hover {
     background-color: #ddd;
 }
 
 .show {
-    display:block;
+    display: block;
 }
+
 
 /*Gridding the NavBar*/
 
@@ -306,9 +252,28 @@ h4 {
     font-weight: bold;
 }
 
-#cv li {
-    list-style: square;
+
+.dropCV {
+    position: relative;
+    display: none;
 }
+
+.dropCvBtn {
+    transform: rotate(-90deg);
+    padding-bottom: 0.05rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+    font-weight: bold;
+    background-color: #E8E9EB;
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+    float:left;
+}
+
+#cv li {
+    list-style: none;
+}
+
 
 /*Skills-Section*/
 
