@@ -1,4 +1,8 @@
-<!--Hi! Thank you for reading my source code! This is my personal portfolio website started on the 19th of March 2024, everything is WIP-->
+<!-- Hi! Thank you for reading my source code! 
+This is the first iteration of my personal portfolio website started on the 19th of March 2024, "finished"(for now) on the *ENDDATE*.
+It was an amazing learning process and I put quite some time, effort and work in it.
+Needlessly to say that I used some help and advice from good ol' Google, StackOverflow (etc.)
+& Copilot (especially for creating some of my project pictures). Have fun!-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +29,7 @@
             <div>
                 <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch"
                     id="portrait">
-                <h1 id="name">Adrian Lesch</h1>
+                <h1 id="name" onclick="topFunction()">Adrian Lesch</h1>
             </div>
             <!--Navbar-->
             <nav class="navBar" id="navBar">
@@ -37,7 +41,7 @@
                     <a href="#navFive" id="contact">Contact</a>
                 </div>
             </nav>
-            <!--Navbar Icon on Scroll or for small screens-->
+            <!--Navbar Icon on scroll for more visibility and for small screens.-->
         </div>
         <div class="dropdown">
             <button onclick="navDropFunction()" class="dropbtn" id="navDropBtn">| | |</button>
@@ -93,7 +97,7 @@
                                 rekindle
                                 my
                                 coding
-                                flame, so I've been actively coding again since <span id="timeCalculator"></span>!</p>
+                                flame, so I've been actively coding again for <span id="timeCalculator"></span>!</p>
                         </li>
                         <br>
                         <li>
@@ -110,8 +114,8 @@
                                 tells
                                 a
                                 unique story.
-                                Ready to see my creations? <!-- Animation Script to attract attention --> Dive into my
-                                projects below!
+                                Ready to see my creations? <a href="#navFour" id="attention">Dive into my
+                                    projects below!</a>
 
                             </p>
                         </li>
@@ -128,16 +132,19 @@
                         <br>
                         <h4>Ingram Micro Distribution GmbH</h4>
                         <h5>IT Distributor Hardware&Software</h5>
-                        <p><button class="dropCvBtn">&#171;</button><em>Partner Sales Manager</em> /
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button1"
+                                data-target="div1">&#171;</button><em>Partner Sales
+                                Manager</em> /
                             January
                             2023 - now</p>
                         <li>
-                            <div class="dropCV">
+                            <div class="dropCV" id="div1">
                                 <ul>
-                                    <li>Customer consulting specialized in Microsoft Cloud&Software licensing</li>
-                                    <li>New customer acquisition</li>
-                                    <li>Customer success management</li>
-                                    <li>Inbound Sales</li>
+                                    <li>&#8227; Customer consulting specialized in Microsoft Cloud&Software licensing
+                                    </li>
+                                    <li>&#8227; New customer acquisition</li>
+                                    <li>&#8227; Customer success management</li>
+                                    <li>&#8227; Inbound Sales</li>
                                 </ul>
                             </div>
                         </li>
@@ -145,18 +152,22 @@
                         <h4>Ambient Recording GmbH</h4>
                         <h5>Manufacturer and dealer of professional soundequipment<br> and Timecode-Generators for
                             movie&series production</h5>
-                        <p><button class="dropCvBtn">&#171;</button><em>External Sales Manager</em> / February 2020 - December 2022</p>
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button2"
+                                data-target="div2">&#171;</button><em>External Sales
+                                Manager</em> / February 2020 - December 2022</p>
                         <li>
-                            <div class="dropCV">
+                            <div class="dropCV" id="div2">
                                 <ul>
-                                    <li>Customer consulting for Timecode-Generators, Boompoles, Sound Recorders and
+                                    <li>&#8227; Customer consulting for Timecode-Generators, Boompoles,<br> Sound
+                                        Recorders
+                                        and
                                         accessories
                                     </li>
-                                    <li>External customer appointments, presence at exhibitions & new customer
+                                    <li>&#8227; External customer appointments, presence at exhibitions & new customer
                                         acquisitions
                                     </li>
-                                    <li>Inbound sales</li>
-                                    <li>Technical support</li>
+                                    <li>&#8227; Inbound sales</li>
+                                    <li>&#8227; Technical support</li>
                                 </ul>
                             </div>
                         </li>
@@ -164,29 +175,35 @@
                         <h4>Lockit Network GmbH</h4>
                         <h5>Co-Company of Ambient Recording GmbH <br> Developer of LockitScript App for Movie&Series
                             Procution</h5>
-                        <p><button class="dropCvBtn" onclick="dropButtonCV()" id="dropButCV">&#171;</button><em>Inbound Sales Manager</em> / February 2020 - December 2022</p>
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button3"
+                                data-target="div3">&#171;</button><em>Inbound Sales
+                                Manager</em> / February 2020 - December 2022</p>
                         <li>
-                            <div class="dropCV">
+                            <div class="dropCV" id="div3">
                                 <ul>
-                                    <li>Inbound sales</li>
-                                    <li>Technical support</li>
-                                    <li>New customer acquisition</li>
+                                    <li>&#8227; Inbound sales</li>
+                                    <li>&#8227; Technical support</li>
+                                    <li>&#8227; New customer acquisition</li>
                                 </ul>
                             </div>
                         </li>
                         <br>
                         <h4>Ströer Deutsche Städte Medien GmbH</h4>
                         <h5>Out-Of-Home-Advertisement Company</h5>
-                        <p><button class="dropCvBtn">&#171;</button><em>Inbound Sales Manager</em> / February 2019 - January 2020 <br> <em>Sales Trainee</em>
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button4"
+                                data-target="div4">&#171;</button><em>Inbound Sales
+                                Manager</em> / February 2019 - January 2020 <br> <em>Sales Trainee</em>
                             /
                             November 2018 - January 2019</p>
                         <li>
-                            <div class="dropCV">
+                            <div class="dropCV" id="div4">
                                 <ul>
-                                    <li>Inbound sales</li>
-                                    <li>Planning of simple campaigns and management of production of advertising media
+                                    <li>&#8227; Inbound sales</li>
+                                    <li>&#8227; Planning of simple campaigns<br> and management of production of
+                                        advertising
+                                        media
                                     </li>
-                                    <li>New customer acquisition</li>
+                                    <li>&#8227; New customer acquisition</li>
                                 </ul>
                             </div>
                         </li>
@@ -205,12 +222,15 @@
                     <h4>Full-Stack Engineer - Codecademy Career Path</h4>
                     <p>September 2023 - in progress</p>
                     <br>
-                    <h4>Java Course - Codecademy</h4><a
-                        href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
-                        target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
-                            alt="A certificate of completion for a Java Course passed by Adrian Lesch"
-                            id="certificate"></a>
-                    <p>June 2023 - September 2023</p>
+                    <h4>Java Course - Codecademy</h4>
+                    <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button5"
+                            data-target="div5">&#171;</button>June 2023 - September 2023</p>
+                    <div class="dropCV" id="div5"><a
+                            href="https://www.codecademy.com/profiles/AlgoRhythmus/certificates/d3f89367b558583e361640f778191345"
+                            target="_blank"><img src="./resources/images/CertificateJavaCourse.png"
+                                alt="A certificate of completion for a Java Course passed by Adrian Lesch"
+                                id="certificate" title="You can click me!"></a>
+                    </div>
                     <br>
                     <h4>Media Informatics - Ludwig-Maximilians University Munich</h4>
                     <p><em>Bachelor</em> / September 2014 - December 2017</p>
@@ -272,16 +292,16 @@
                         <h3><u>Coding<br>Skills</u></h3>
                         <ul class="codingFlex">
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png" alt="A HTML icon"
-                                    title="HTML"></li>
+                                    title="HTML" class="rotateIcon"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon"
-                                    title="CSS">
+                                    title="CSS" class="rotateIcon">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-javascript-48.png"
-                                    alt="A Javascript icon" title="Javascript"></li>
+                                    alt="A Javascript icon" title="Javascript" class="rotateIcon"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png" alt="A Java icon"
-                                    title="Java"></li>
+                                    title="Java" class="rotateIcon"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-python-48.png"
-                                    alt="A Python icon" title="Python">
+                                    alt="A Python icon" title="Python" class="rotateIcon">
                             </li>
                         </ul>
                     </div>
@@ -290,9 +310,9 @@
                         <br>
                         <ul class="frameworkFlex">
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png" alt="A React icon"
-                                    title="React (in progress)"></li>
+                                    title="React (in progress)" class="rotateIcon"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png" alt="A Godot icon"
-                                    title="Godot-Engine (Hobby)"></li>
+                                    title="Godot-Engine (Hobby)" class="rotateIcon"></li>
                         </ul>
                     </div>
 
@@ -301,21 +321,21 @@
                         <br>
                         <ul class="toolsFlex">
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon"
-                                    title="Git">
+                                    title="Git" class="rotateIcon">
                             </li>
                             <li><img src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub icon"
-                                    title="GitHub" id="gitHub">
+                                    title="GitHub" id="gitHub" class="rotateIcon">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-trello-48.png"
-                                    alt="A Trello icon" title="Trello">
+                                    alt="A Trello icon" title="Trello" class="rotateIcon">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-existieren-48.png"
-                                    alt="A Jira icon" title="Jira">
+                                    alt="A Jira icon" title="Jira" class="rotateIcon">
                             </li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-zendesk-48.png"
-                                    alt="A Zendesk icon" title="Zendesk"></li>
+                                    alt="A Zendesk icon" title="Zendesk" class="rotateIcon"></li>
                             <li><img src="./resources/icon/CodinglanguagesIcons/icons8-microsoft-power-apps-48.png"
-                                    alt="A MSFT PowerApps icon" title="PowerApps"></li>
+                                    alt="A MSFT PowerApps icon" title="PowerApps" class="rotateIcon"></li>
                         </ul>
                     </div>
                 </div>
@@ -518,6 +538,12 @@
             <p><strong>Or contact me via e-mail:</strong> <a href="mailto:adrian.lesch@mail.de"><img
                         src="./resources/icon/SocialMedia/MSMAI001.PNG" alt="A Mail Icon" id="mailIcon"></a></p>
         </div>
+
+        <div class="heliDiv">
+            <img src="./resources/icon/SocialMedia/heliIcon.png" alt="An icon of a helicopter." id="heliIcon" onclick="topFunction()">
+            <p>Back to the top!</p>
+        </div>
+
         <!--Bottom-Section-->
         <div class="flexBottom">
             <a target="_blank" href="https://icons8.com"><img
@@ -527,10 +553,9 @@
             <a href="" target="_blank"><img src="./resources/icon/CodinglanguagesIcons/StylesheetIcon.png"
                     alt="A Stylesheet Icon" title="Click here to get to my stylesheet!"></a>
         </div>
-        <!--Rollup back to the Top-Arrow tbd-->
     </footer>
 
-    <!--HEY THERE, THANKS FOR READING SO FAR! <3 CHECK OUT MY LINKED SCRIPT! FEEDBACK ALWAYS APPRECIATED!-->
+    <!--HOWDY PARTNER, THANKS FOR READING SO FAR! <3 CHECK OUT MY LINKED SCRIPT AND CSS STYLESHEET! FEEDBACK ALWAYS APPRECIATED!-->
 
     <script src="./resources/scripts/script.js"></script>
 

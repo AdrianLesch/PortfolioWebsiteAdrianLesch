@@ -80,24 +80,24 @@ h4 {
     align-items: center;
 }
 
-
-
 #portrait {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
-    transition: 0.1s;
+    transition: 0.3s ease;
     margin: .5rem;
 }
 
 #name {
-    margin: .5rem
+    margin: .5rem;
+    transition: 1s ease;
+    cursor: pointer;
 }
 
 .navBar {
     display: flex;
     flex-flow: column wrap;
-    transition: 0.4s;
+    transition: 0.3s ease;
 }
 
 .navBar a {
@@ -126,8 +126,6 @@ h4 {
     grid-column: 5rem 5rem 5rem;
 }
 
-
-
 /* Dropdown Button for NavBar */
 
 .dropbtn {
@@ -138,7 +136,7 @@ h4 {
     font-size: 1rem;
     border: 1px white solid;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.3s;
     visibility: hidden;
 }
 
@@ -181,7 +179,7 @@ h4 {
     }
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content a:focus {
     background-color: #ddd;
 }
 
@@ -230,6 +228,7 @@ h4 {
 }
 
 /*Bio & CV*/
+
 .columns {
     max-width: fit-content;
     max-height: fit-content;
@@ -248,15 +247,32 @@ h4 {
     margin-bottom: 1rem;
 }
 
+#attention {
+    text-decoration: underline dotted;
+    color: #000000;
+}
+
+#attention:hover, #attention:focus {
+    font-size: larger;
+    color: blue;
+    transition: 0.3s ease;
+}
+
+#cv {
+    max-width: 40rem;
+}
+
+
 #timeCalculator {
     font-weight: bold;
 }
 
 
 .dropCV {
-    position: relative;
     display: none;
+    font-size: .9rem;
 }
+
 
 .dropCvBtn {
     transform: rotate(-90deg);
@@ -267,11 +283,18 @@ h4 {
     background-color: #E8E9EB;
     margin-left: 0.2rem;
     margin-right: 0.5rem;
-    float:left;
 }
 
-#cv li {
-    list-style: none;
+#certificate {
+    width: 13rem;
+    height: 10rem;
+    border: 2px black dotted;
+    box-shadow: 3px 5px 5px #000000;
+}
+
+#certificate:hover, #certificate:focus {
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
 
 
@@ -316,6 +339,12 @@ h4 {
     padding: 2rem;
     color: #000000;
 }
+
+.rotateIcon:hover, .rotateIcon:focus {
+    transform: rotateY(360deg);
+    transition: 0.8s ease;
+}
+
 
 #gitHub {
     width: 3rem;
@@ -365,7 +394,7 @@ h4 {
 .flexProject:hover,
 .flexProject:focus {
     transform: scale(1.1);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .flexProject li {
@@ -389,11 +418,7 @@ h4 {
     border: 3px dotted black;
 }
 
-#certificate {
-    display: none;
-}
-
-/* Footer-Styling */
+/* Footer-Styling & Contact-Section */
 
 .contactSection {
     padding: .5rem;
@@ -432,9 +457,26 @@ h4 {
     transition: 0.4s;
 }
 
+.heliDiv {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#heliIcon {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1.2rem;
+}
+
+#heliIcon:hover, #heliIcon:focus {
+    transform: rotateY(360deg);
+    transition: 0.8s ease;
+}
+
 .flexBottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    bottom: 0px;
+    align-items: center;
 }
+
