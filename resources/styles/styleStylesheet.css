@@ -40,6 +40,10 @@ html {
 .colorsWrapper {
     display: flex;
     flex-flow: column wrap;
+    position: relative;
+    border: 1rem black solid;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .subWrapperColor {
@@ -66,7 +70,7 @@ html {
     box-shadow: 2px 5px 5px black;
     margin-bottom: .5rem;
 }
-
+/*RICH BLACK*/
 #richBlack {
     background-color: #0d1317;
     color: white;
@@ -77,7 +81,7 @@ html {
 #richBlack::before {
     content: "#0d1317";
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.9rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -86,6 +90,19 @@ html {
     opacity: 1;
 }
 
+#richBlack::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#richBlack:hover::after {
+    opacity: 1;
+}
+
+/*LICORICE*/
 #licorice {
     background-color: #362023;
     color: white;
@@ -96,7 +113,7 @@ html {
 #licorice::before {
     content: "#362023";
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.9rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -105,16 +122,29 @@ html {
     opacity: 1;
 }
 
+#licorice::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#licorice:hover::after {
+    opacity: 1;
+}
+/*OUTERSPACE*/
 #outerspace {
     background-color: #474747;
     color: white;
+    position: relative;
 }
 
 /*On hover content addition*/
 #outerspace::before {
     content: "#474747";
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.9rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -123,24 +153,192 @@ html {
     opacity: 1;
 }
 
+#outerspace::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 
+#outerspace:hover::after {
+    opacity: 1;
+}
+
+/*WHITE*/
 #white {
     background-color: white;
     color: black;
     border-color: black;
+    position: relative;
 }
 
+/*On hover content addition*/
+#white::before {
+    content: "#FFFFFF";
+    position: absolute;
+    bottom: 2.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#white:hover::before {
+    opacity: 1;
+}
+
+#white::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#white:hover::after {
+    opacity: 1;
+}
+/*BLACK*/
 #black {
     background-color: black;
     color: white;
+    position: relative;
 }
 
+/*On hover content addition*/
+#black::before {
+    content: "#000000";
+    position: absolute;
+    bottom: 2.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#black:hover::before {
+    opacity: 1;
+}
+
+#black::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#black:hover::after {
+    opacity: 1;
+}
+/*LEMON CHIFFON*/
 #lemonChiffon {
     background-color: #FAF0CA;
-    color: black
+    color: black;
+    position: relative;
 }
 
+/*On hover content addition*/
+#lemonChiffon::before {
+    content: "#FAF0CA";
+    position: absolute;
+    bottom: 2.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lemonChiffon:hover::before {
+    opacity: 1;
+}
+
+#lemonChiffon::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#lemonChiffon:hover::after {
+    opacity: 1;
+}
+
+/*ANTI-FLASH WHITE*/
 #antiFlashWhite {
     background-color: #E8E9EB;
     color: black;
+    position: relative;
+}
+
+/*On hover content addition*/
+#antiFlashWhite::before {
+    content: "#E8E9EB";
+    position: absolute;
+    bottom: 2.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#antiFlashWhite:hover::before {
+    opacity: 1;
+}
+
+#antiFlashWhite::after {
+    content: "⮛"; 
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#antiFlashWhite:hover::after {
+    opacity: 1;
+}
+
+#disclaimer {
+    position: absolute;
+    bottom: .3rem;
+    right: 3rem;
+    font-size: small;
+}
+
+/*FONT-SECTION*/
+
+.fontWrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1rem black solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#italic {
+    font-style: italic;
+}
+
+.button {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+}
+
+#linkBtn {
+    border: none;
+}
+
+#linkBtn a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Bitter", serif;
+    border: .5rem black solid;
+    border-style: ;
+    font-weight: bold;
+    padding: 1rem;
 }
