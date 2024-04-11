@@ -1,0 +1,146 @@
+/*General-Styling*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+html {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/*Body-Section*/
+
+.wrapperBody {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.wrapperMain {
+    width: 90%;
+    height: 90%;
+    border: 1rem black solid;
+    padding: 2rem;
+}
+
+/*Colors-Section*/
+
+.colorsWrapper {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.subWrapperColor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: .8rem;
+    padding: .8rem;
+
+}
+
+.subWrapperColor li {
+    max-width: 10rem;
+}
+
+.colorBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: 2px white solid;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px black;
+    margin-bottom: .5rem;
+}
+
+#richBlack {
+    background-color: #0d1317;
+    color: white;
+    position: relative;
+}
+
+/*On hover content addition*/
+#richBlack::before {
+    content: "#0d1317";
+    position: absolute;
+    bottom: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#richBlack:hover::before {
+    opacity: 1;
+}
+
+#licorice {
+    background-color: #362023;
+    color: white;
+    position: relative;
+}
+
+/*On hover content addition*/
+#licorice::before {
+    content: "#362023";
+    position: absolute;
+    bottom: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#licorice:hover::before {
+    opacity: 1;
+}
+
+#outerspace {
+    background-color: #474747;
+    color: white;
+}
+
+/*On hover content addition*/
+#outerspace::before {
+    content: "#474747";
+    position: absolute;
+    bottom: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#outerspace:hover::before {
+    opacity: 1;
+}
+
+
+#white {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+#lemonChiffon {
+    background-color: #FAF0CA;
+    color: black
+}
+
+#antiFlashWhite {
+    background-color: #E8E9EB;
+    color: black;
+}
