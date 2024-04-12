@@ -120,71 +120,6 @@ html {
    }
 }
 
-@media only screen and (max-width: 280px) {
-    
-    .colorsWrapper{
-        padding: 0rem;
-    }
-
-    #linkBtn  {
-        transform: scale(0.5);
-        content: "↬";
-    }
-
-     .colorBox {
-     width: 4.5rem;
-     height: 4.5rem;
-     font-size: x-small;
-    }
-
-
-
-    .liMediaQuer li {
-        display: none;
-    }
-
-    #disclaimer{
-        display: none;
-    }
- 
-    #richBlack:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #licorice:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #outerspace:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #white:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #black:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #lemonChiffon:hover::before{
-     bottom: 2.5rem;
-    }
-
-    #lemonChiffon {
-        font-size: x-small;
-        text-align: center;
-    }
- 
-    #antiFlashWhite:hover::before{
-     bottom: 2.5rem;
-    }
-
-    #antiFlashWhite{
-        text-align: center;
-        font-size: x-small;
-    }
- }
 /*RICH BLACK*/
 #richBlack {
     background-color: #0d1317;
@@ -506,7 +441,109 @@ html {
 }
 
 @media only screen and (max-width: 760px) {
-    .textStyleDiv {
+    .textStyleWrapper{
         width: fit-content;
+        padding: 0%;
+        margin: 0%;
+        justify-content: center;
     }
+    
+    .textStyleDiv{
+        width: fit-content;
+        height: fit-content;
+        border: 2px black solid;
+    }
+
+    .liMediaQuer li {
+        display: none;
+    }
+
+    #disclaimer{
+        display: none;
+    }
+   
 }
+
+@media only screen and (max-width: 360px) {
+    
+    .colorsWrapper{
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .fontWrapper{
+        text-align: center;
+    }
+
+    .textStyleWrapper{
+        text-align: center;
+    }
+
+    #linkBtn  a {
+        display: flex;
+        flex-flow: column;
+        border-style: none;
+        background-color: #FAF0CA;
+    }
+
+     .colorBox {
+     width: 4.5rem;
+     height: 4.5rem;
+     font-size: x-small;
+     
+    }
+
+    .liMediaQuer li {
+        display: none;
+    }
+
+    #disclaimer{
+        display: none;
+    }
+ 
+    #richBlack:hover::before{
+     bottom: 2.5rem;
+    }
+ 
+    #licorice:hover::before{
+     bottom: 2.5rem;
+    }
+ 
+    #outerspace:hover::before{
+     bottom: 2.5rem;
+    }
+ 
+    #white:hover::before{
+     bottom: 2.5rem;
+    }
+ 
+    #black:hover::before{
+     bottom: 2.5rem;
+    }
+ 
+    #lemonChiffon:hover::before{
+     bottom: 2.8rem;
+    }
+
+    #lemonChiffon:hover::after{
+        bottom: .5rem;
+       }
+
+    #lemonChiffon {
+        font-size: x-small;
+        text-align: center;
+    }
+ 
+    #antiFlashWhite:hover::before{
+     bottom: 2.8rem;
+    }
+
+    #antiFlashWhite:hover::after{
+        bottom: .5rem;
+       }
+
+    #antiFlashWhite{
+        text-align: center;
+        font-size: x-small;
+    }
+ }

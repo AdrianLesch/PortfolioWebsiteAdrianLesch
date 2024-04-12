@@ -427,6 +427,8 @@ h4 {
 
 /* Footer-Styling & Contact-Section */
 
+
+
 .contactSection {
     padding: .5rem;
     background-color: #FAF0CA;
@@ -466,7 +468,7 @@ h4 {
 
 .heliDiv {
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #heliIcon {
@@ -486,4 +488,9 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.flexBottom a {
+    display: flex;
+    align-items: baseline;
 }
