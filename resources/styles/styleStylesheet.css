@@ -36,18 +36,6 @@ html {
     position: relative;
 }
 
-@media only screen and (max-width: 760px) {
-    
-    .wrapperBody {
-        padding: 1rem;
-    }
-    
-    .wrapperMain {
-        width: 100%;
-        height: 100%;
-        padding: 1rem;
-    }
-}
 /*Colors-Section*/
 
 .colorsWrapper {
@@ -84,42 +72,6 @@ html {
     margin-bottom: .5rem;
 }
 
-@media only screen and (max-width: 760px) {
-   .colorBox {
-    width: 8rem;
-    height: 8rem;
-    font-size: smaller;
-   }
-
-   #richBlack:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #licorice:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #outerspace:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #white:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #black:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #lemonChiffon:hover::before{
-    bottom: 2.5rem;
-   }
-
-   #antiFlashWhite:hover::before{
-    bottom: 2.5rem;
-   }
-}
-
 /*RICH BLACK*/
 #richBlack {
     background-color: #0d1317;
@@ -141,7 +93,7 @@ html {
 }
 
 #richBlack::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -173,7 +125,7 @@ html {
 }
 
 #licorice::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -183,6 +135,7 @@ html {
 #licorice:hover::after {
     opacity: 1;
 }
+
 /*OUTERSPACE*/
 #outerspace {
     background-color: #474747;
@@ -204,7 +157,7 @@ html {
 }
 
 #outerspace::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -237,7 +190,7 @@ html {
 }
 
 #white::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -247,6 +200,7 @@ html {
 #white:hover::after {
     opacity: 1;
 }
+
 /*BLACK*/
 #black {
     background-color: black;
@@ -268,7 +222,7 @@ html {
 }
 
 #black::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -278,6 +232,7 @@ html {
 #black:hover::after {
     opacity: 1;
 }
+
 /*LEMON CHIFFON*/
 #lemonChiffon {
     background-color: #FAF0CA;
@@ -299,7 +254,7 @@ html {
 }
 
 #lemonChiffon::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -331,7 +286,7 @@ html {
 }
 
 #antiFlashWhite::after {
-    content: "⮛"; 
+    content: "⮛";
     position: absolute;
     bottom: 1rem;
     opacity: 0;
@@ -440,15 +395,62 @@ html {
     box-shadow: 2px 5px 5px black;
 }
 
+/*----MEDIA QUERIES----*/
+
 @media only screen and (max-width: 760px) {
-    .textStyleWrapper{
+
+    .wrapperBody {
+        padding: 1rem;
+    }
+
+    .wrapperMain {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .colorBox {
+        width: 8rem;
+        height: 8rem;
+        font-size: smaller;
+    }
+
+    #richBlack:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #licorice:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #outerspace:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #white:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #black:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #lemonChiffon:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #antiFlashWhite:hover::before {
+        bottom: 2.5rem;
+    }
+
+    .textStyleWrapper {
         width: fit-content;
         padding: 0%;
         margin: 0%;
         justify-content: center;
     }
-    
-    .textStyleDiv{
+
+    .textStyleDiv {
         width: fit-content;
         height: fit-content;
         border: 2px black solid;
@@ -458,92 +460,92 @@ html {
         display: none;
     }
 
-    #disclaimer{
+    #disclaimer {
         display: none;
     }
-   
 }
 
+
 @media only screen and (max-width: 360px) {
-    
-    .colorsWrapper{
+
+    .colorsWrapper {
         padding: 0rem;
         text-align: center;
     }
 
-    .fontWrapper{
+    .fontWrapper {
         text-align: center;
     }
 
-    .textStyleWrapper{
+    .textStyleWrapper {
         text-align: center;
     }
 
-    #linkBtn  a {
+    #linkBtn a {
         display: flex;
         flex-flow: column;
         border-style: none;
         background-color: #FAF0CA;
     }
 
-     .colorBox {
-     width: 4.5rem;
-     height: 4.5rem;
-     font-size: x-small;
-     
+    .colorBox {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: x-small;
+
     }
 
     .liMediaQuer li {
         display: none;
     }
 
-    #disclaimer{
+    #disclaimer {
         display: none;
     }
- 
-    #richBlack:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #licorice:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #outerspace:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #white:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #black:hover::before{
-     bottom: 2.5rem;
-    }
- 
-    #lemonChiffon:hover::before{
-     bottom: 2.8rem;
+
+    #richBlack:hover::before {
+        bottom: 2.5rem;
     }
 
-    #lemonChiffon:hover::after{
+    #licorice:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #outerspace:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #white:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #black:hover::before {
+        bottom: 2.5rem;
+    }
+
+    #lemonChiffon:hover::before {
+        bottom: 2.8rem;
+    }
+
+    #lemonChiffon:hover::after {
         bottom: .5rem;
-       }
+    }
 
     #lemonChiffon {
         font-size: x-small;
         text-align: center;
     }
- 
-    #antiFlashWhite:hover::before{
-     bottom: 2.8rem;
+
+    #antiFlashWhite:hover::before {
+        bottom: 2.8rem;
     }
 
-    #antiFlashWhite:hover::after{
+    #antiFlashWhite:hover::after {
         bottom: .5rem;
-       }
+    }
 
-    #antiFlashWhite{
+    #antiFlashWhite {
         text-align: center;
         font-size: x-small;
     }
- }
+}
