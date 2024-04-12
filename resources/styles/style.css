@@ -129,6 +129,32 @@ h4 {
     grid-column: 5rem 5rem 5rem;
 }
 
+/*---MEDIA-QUERIES NAVBAR----*/
+
+@media only screen and (max-width: 514px) {
+    
+    header {
+        flex-flow: column wrap;
+    }
+
+
+    #portrait {
+        max-width: 10rem; 
+        max-height: 10rem; 
+    }
+    
+    .navBar {
+        display: none !important; 
+    }
+
+    .dropbtn{
+        transform: rotate(90deg) !important;
+        opacity: 1 !important;
+        visibility: visible !important; 
+    }
+}
+
+
 /* Dropdown Button for NavBar */
 
 .dropbtn {
