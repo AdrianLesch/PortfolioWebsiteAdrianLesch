@@ -24,10 +24,10 @@
 
 <body class="wrapperBody">
     <div class="wrapperMain">
-        <header>
+        <header role="banner">
             <h1>Portfolio-Website-Styleguide</h1>
         </header>
-        <main>
+        <main role="main">
             <section>
                 <div class="colorsWrapper">
                     <!--Idea: On hover change textcontent to hex code-->
@@ -35,60 +35,60 @@
                     <ul class="subWrapperColor">
                         <!--Rich Black-->
                         <li>
-                            <h3 class="colorBox" id="richBlack">Rich Black</h3>
+                            <h3 class="colorBox" id="richBlack" role="button">Rich Black</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ Header</li>
-                                <li>⇁ BGC Dropdownbtn</li>
-                                <li>⇁ Box-Shadows</li>
+                                <li role="menuitem">⇁ Header</li>
+                                <li role="menuitem">⇁ BGC Dropdownbtn</li>
+                                <li role="menuitem">⇁ Box-Shadows</li>
                             </ul>
                         </li>
                         <!--Licorice-->
                         <li>
-                            <h3 class="colorBox" id="licorice">Licorice</h3>
+                            <h3 class="colorBox" id="licorice" role="button">Licorice</h3>
                             <ul class="liMediaQuer">
                                 <li>⇁ HTML BGC</li>
                             </ul>
                         </li>
                         <!--Outerspace-->
                         <li>
-                            <h3 class="colorBox" id="outerspace">Outerspace</h3>
+                            <h3 class="colorBox" id="outerspace" role="button">Outerspace</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ BGC Navbuttons</li>
-                                <li>⇁ Project BGC</li>
+                                <li role="menuitem">⇁ BGC Navbuttons</li>
+                                <li role="menuitem">⇁ Project BGC</li>
                             </ul>
                         </li>
                         <!--White-->
                         <li>
-                            <h3 class="colorBox" id="white">White</h3>
+                            <h3 class="colorBox" id="white" role="button">White</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ Font-Color</li>
-                                <li>⇁ Border-Color</li>
-                                <li>⇁ BGC Navbuttons</li>
+                                <li role="menuitem">⇁ Font-Color</li>
+                                <li role="menuitem"> ⇁ Border-Color</li>
+                                <li role="menuitem">⇁ BGC Navbuttons</li>
                             </ul>
                         </li>
                         <!--Black-->
                         <li>
-                            <h3 class="colorBox" id="black">Black</h3>
+                            <h3 class="colorBox" id="black" role="button">Black</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ Font-Color</li>
-                                <li>⇁ Border-Color</li>
-                                <li>⇁ Box-shadows</li>
+                                <li role="menuitem">⇁ Font-Color</li>
+                                <li role="menuitem">⇁ Border-Color</li>
+                                <li role="menuitem">⇁ Box-shadows</li>
                             </ul>
                         </li>
                         <!--Lemon Chiffon-->
                         <li>
-                            <h3 class="colorBox" id="lemonChiffon">Lemon Chiffon</h3>
+                            <h3 class="colorBox" id="lemonChiffon" role="button">Lemon Chiffon</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ Dropdownnav</li>
-                                <li>⇁ Active-Link-Color</li>
-                                <li>⇁ "Contact"-BGC</li>
+                                <li role="menuitem">⇁ Dropdownnav</li>
+                                <li role="menuitem">⇁ Active-Link-Color</li>
+                                <li role="menuitem">⇁ "Contact"-BGC</li>
                             </ul>
                         </li>
                         <!--Anti-Flash-White-->
                         <li>
-                            <h3 class="colorBox" id="antiFlashWhite">Anti-flash white</h3>
+                            <h3 class="colorBox" id="antiFlashWhite" role="button">Anti-flash white</h3>
                             <ul class="liMediaQuer">
-                                <li>⇁ BGC "Main"-Divs</li>
+                                <li role="menuitem">⇁ BGC "Main"-Divs</li>
                             </ul>
                         </li>
                     </ul>
@@ -97,7 +97,7 @@
             </section>
 
             <section>
-                <div class="fontWrapper">
+                <div class="fontWrapper" role="region">
                     <div>
                         <h2>Font</h2>
                         <br>
@@ -110,19 +110,19 @@
                     <div class="button">
                         <h3>You can find me here!</h3>
                         <br>
-                        <button id="linkBtn" type="button"><a href="https://fonts.google.com/specimen/Bitter"
+                        <button id="linkBtn" type="button role="button""><a href="https://fonts.google.com/specimen/Bitter"
                                 target="_blank">> Google Fonts</a></button>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="textStyleWrapper">
+                <div class="textStyleWrapper" role="region">
                     <h2>Text-Styles</h2>
                     <!--H1--->
                     <div class="textStyleFlex">
                         <div class="textStyleDiv">
-                            <h1><u>h1: Main Page Heading</u></h1>
+                            <h1 role="heading" aria-level="1"><u>h1: Main Page Heading</u></h1>
                             <ul>
                                 <li>⇁ Font-weight: 400 (normal)</li>
                                 <li>⇁ Font-size: 32px (2rem)</li>
@@ -131,7 +131,7 @@
                         </div>
                         <!--H2-->
                         <div class="textStyleDiv">
-                            <h2><u>h2: Section Heading</u></h2>
+                            <h2 role="heading" aria-level="2"><u>h2: Section Heading</u></h2>
                             <ul>
                                 <li>⇁ Font-weight: 400 (normal)</li>
                                 <li>⇁ Font-size: 24px (1.5rem)</li>
@@ -140,7 +140,7 @@
                         </div>
                         <!--H3-->
                         <div class="textStyleDiv">
-                            <h3><u>h3: Sub-Heading (for lists e.g.)</u></h3>
+                            <h3 role="heading" aria-level="3"><u>h3: Sub-Heading (for lists e.g.)</u></h3>
                             <ul>
                                 <li>⇁ Font-weight: 400 (normal)</li>
                                 <li>⇁ Font-size: 20.8px (1.3rem)</li>
