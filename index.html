@@ -23,34 +23,34 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
 
 <body>
     <!--Header & Navbar Section-->
-    <header>
+    <header role="banner">
         <div class="headerFlex" id="headerWrapper">
             <!--Portrait-->
             <div class="portraitWrapper">
                 <img src="./resources/images/AdrianLeschPortraitEvenSmoler.jpg" alt="A portrait of Adrian Lesch"
-                    id="portrait">
-                <h1 id="name" onclick="topFunction()">Adrian Lesch</h1>
+                    id="portrait" role="img">
+                <h1 id="name" onclick="topFunction()" role="heading" aria-level="1">Adrian Lesch</h1>
             </div>
             <!--Navbar-->
-            <nav class="navBar" id="navBar">
-                <a href="#navOne">Biography</a>
+            <nav class="navBar" id="navBar" role="navigation">
+                <a href="#navOne" role="link">Biography</a>
                 <div class="navGrid">
-                    <a href="#navTwo" id="cv">Curriculum</a>
-                    <a href="#skillsStyle" id="skill">Skills</a>
-                    <a href="#navFour" id="project">Projects</a>
-                    <a href="#navFive" id="contact">Contact</a>
+                    <a href="#navTwo" id="cv" role="link">Curriculum</a>
+                    <a href="#skillsStyle" id="skill" role="link">Skills</a>
+                    <a href="#navFour" id="project" role="link">Projects</a>
+                    <a href="#navFive" id="contact" role="link">Contact</a>
                 </div>
             </nav>
             <!--Navbar Icon on scroll for more visibility and for small screens.-->
         </div>
         <div class="dropdown">
-            <button onclick="navDropFunction()" class="dropbtn" id="navDropBtn">| | |</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#navOne" id="bio">Biography</a>
-                <a href="#navTwo" id="cv">Curriculum</a>
-                <a href="#skillsStyle" id="skill">Skills</a>
-                <a href="#navFour" id="project">Projects</a>
-                <a href="#navFive" id="contact">Contact</a>
+            <button onclick="navDropFunction()" class="dropbtn" id="navDropBtn" role="button">| | |</button>
+            <div id="myDropdown" class="dropdown-content" role="menu">
+                <a href="#navOne" id="bio" role="menuitem">Biography</a>
+                <a href="#navTwo" id="cv" role="menuitem">Curriculum</a>
+                <a href="#skillsStyle" id="skill" role="menuitem">Skills</a>
+                <a href="#navFour" id="project" role="menuitem">Projects</a>
+                <a href="#navFive" id="contact" role="menuitem">Contact</a>
             </div>
         </div>
     </header>
@@ -59,8 +59,8 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
     <main style="margin-top:350px;padding:15px 15px;" id="main">
         <div class="flexMain">
             <!--Biography-Section-->
-            <section>
-                <h2 class="index" id="navOne">Biography</h2>
+            <section role="region">
+                <h2 class="index" id="navOne" role="heading" aria-level="2">Biography</h2>
                 <div class="columns" id="biography">
                     <p> Hi, I’m Adrian, a web developer passionate about crafting digital experiences. Currently, I’m on
                         the
@@ -73,7 +73,7 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                     <br>
                     <ul>
                         <li>
-                            <h4>Journey:</h4>
+                            <h4 role="heading" aria-level="4">Journey:</h4>
                             <p>As a child, I was drawn to computers—not just for gaming, but for creating. I vividly
                                 remember
                                 tinkering
@@ -89,7 +89,7 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                         </li>
                         <br>
                         <li>
-                            <h4>Coding Adventure Redux:</h4>
+                            <h4 role="heading" aria-level="4">Coding Adventure Redux:</h4>
                             <p>After a detour into various sales positions, I felt the pull back to software and web
                                 development.
                                 In September 2023, I embarked on the Fullstack Engineer Career Path.
@@ -101,14 +101,14 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                         </li>
                         <br>
                         <li>
-                            <h4>The Present:</h4>
+                            <h4 role="heading" aria-level="4">The Present:</h4>
                             <p>Now, I’m diving headfirst into full-stack web development. My journey has been a blend of
                                 passion,
                                 persistence, and pixels.</p>
                         </li>
                         <br>
                         <li>
-                            <h4>Explore My Work:</h4>
+                            <h4 role="heading" aria-level="4">Explore My Work:</h4>
                             <p>My interactive portfolio houses responsive websites, dynamic web apps, and more. Each
                                 project
                                 tells
@@ -124,105 +124,111 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
             </section>
 
             <!--CV-Section-->
-            <section>
-                <h2 class="index" id="navTwo">Curriculum Vitae</h2>
+            <section role="region">
+                <h2 class="index" id="navTwo" role="heading" aria-level="2">Curriculum Vitae</h2>
                 <div class="columns" id="cv">
-                    <ul>
-                        <h3><u>Job Experience</u></h3>
+                    <ul role="list">
+                        <h3 role="heading" aria-level="3"><u>Job Experience</u></h3>
                         <br>
-                        <h4>Ingram Micro Distribution GmbH</h4>
-                        <h5>IT Distributor Hardware&Software</h5>
-                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button1"
-                                data-target="div1">&#171;</button><em>Partner Sales
+                        <h4 role="heading" aria-level="4">Ingram Micro Distribution GmbH</h4>
+                        <h5 role="heading" aria-level="5">IT Distributor Hardware&Software</h5>
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button1" data-target="div1"
+                                role="button">&#171;</button><em>Partner Sales
                                 Manager</em> /
                             January
                             2023 - now</p>
-                        <li>
+                        <li role="listitem">
                             <div class="dropCV" id="div1">
-                                <ul>
-                                    <li>&#8227; Customer consulting specialized in Microsoft Cloud&Software licensing
+                                <ul role="list">
+                                    <li role="listitem">&#8227; Customer consulting specialized in Microsoft
+                                        Cloud&Software licensing
                                     </li>
-                                    <li>&#8227; New customer acquisition</li>
-                                    <li>&#8227; Customer success management</li>
-                                    <li>&#8227; Inbound Sales</li>
+                                    <li role="listitem">&#8227; New customer acquisition</li>
+                                    <li role="listitem">&#8227; Customer success management</li>
+                                    <li role="listitem">&#8227; Inbound Sales</li>
                                 </ul>
                             </div>
                         </li>
                         <br>
-                        <h4>Ambient Recording GmbH</h4>
-                        <h5>Manufacturer and dealer of professional soundequipment<br> and Timecode-Generators for
+                        <h4 role="heading" aria-level="4">Ambient Recording GmbH</h4>
+                        <h5 role="heading" aria-level="5">Manufacturer and dealer of professional soundequipment<br> and
+                            Timecode-Generators for
                             movie&series production</h5>
-                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button2"
-                                data-target="div2">&#171;</button><em>External Sales
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button2" data-target="div2"
+                                role="button">&#171;</button><em>External Sales
                                 Manager</em> / February 2020 - December 2022</p>
-                        <li>
+                        <li role="listitem">
                             <div class="dropCV" id="div2">
-                                <ul>
-                                    <li>&#8227; Customer consulting for Timecode-Generators, Boompoles,<br> Sound
+                                <ul role="list">
+                                    <li role="listitem">&#8227; Customer consulting for Timecode-Generators,
+                                        Boompoles,<br> Sound
                                         Recorders
                                         and
                                         accessories
                                     </li>
-                                    <li>&#8227; External customer appointments, presence at exhibitions & new customer
+                                    <li role="listitem">&#8227; External customer appointments, presence at exhibitions
+                                        & new customer
                                         acquisitions
                                     </li>
-                                    <li>&#8227; Inbound sales</li>
-                                    <li>&#8227; Technical support</li>
+                                    <li role="listitem">&#8227; Inbound sales</li>
+                                    <li role="listitem">&#8227; Technical support</li>
                                 </ul>
                             </div>
                         </li>
                         <br>
-                        <h4>Lockit Network GmbH</h4>
-                        <h5>Co-Company of Ambient Recording GmbH <br> Developer of LockitScript App for Movie&Series
+                        <h4 role="heading" aria-level="4">Lockit Network GmbH</h4>
+                        <h5 role="heading" aria-level="5">Co-Company of Ambient Recording GmbH <br> Developer of
+                            LockitScript App for Movie&Series
                             Procution</h5>
-                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button3"
-                                data-target="div3">&#171;</button><em>Inbound Sales
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button3" data-target="div3"
+                                role="button">&#171;</button><em>Inbound Sales
                                 Manager</em> / February 2020 - December 2022</p>
-                        <li>
+                        <li role="listitem">
                             <div class="dropCV" id="div3">
-                                <ul>
-                                    <li>&#8227; Inbound sales</li>
-                                    <li>&#8227; Technical support</li>
-                                    <li>&#8227; New customer acquisition</li>
+                                <ul role="list">
+                                    <li role="listitem">&#8227; Inbound sales</li>
+                                    <li role="listitem">&#8227; Technical support</li>
+                                    <li role="listitem">&#8227; New customer acquisition</li>
                                 </ul>
                             </div>
                         </li>
                         <br>
-                        <h4>Ströer Deutsche Städte Medien GmbH</h4>
-                        <h5>Out-Of-Home-Advertisement Company</h5>
-                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button4"
-                                data-target="div4">&#171;</button><em>Inbound Sales
+                        <h4 role="heading" aria-level="4">Ströer Deutsche Städte Medien GmbH</h4>
+                        <h5 role="heading" aria-level="5">Out-Of-Home-Advertisement Company</h5>
+                        <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button4" data-target="div4"
+                                role="button">&#171;</button><em>Inbound Sales
                                 Manager</em> / February 2019 - January 2020 <br> <em>Sales Trainee</em>
                             /
                             November 2018 - January 2019</p>
-                        <li>
+                        <li role="listitem">
                             <div class="dropCV" id="div4">
-                                <ul>
-                                    <li>&#8227; Inbound sales</li>
-                                    <li>&#8227; Planning of simple campaigns<br> and management of production of
+                                <ul role="list">
+                                    <li role="listitem">&#8227; Inbound sales</li>
+                                    <li role="listitem">&#8227; Planning of simple campaigns<br> and management of
+                                        production of
                                         advertising
                                         media
                                     </li>
-                                    <li>&#8227; New customer acquisition</li>
+                                    <li role="listitem">&#8227; New customer acquisition</li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                     <br>
-                    <h4>Mars GmbH</h4>
-                    <h5>Gastronomy</h5>
+                    <h4 role="heading" aria-level="4">Mars GmbH</h4>
+                    <h5 role="heading" aria-level="5">Gastronomy</h5>
                     <p><em>Barkeeper</em> / November 2012 - October 2018</p>
                     <br>
-                    <h4>Just Music GmbH</h4>
-                    <h5>Musical instrument retailer</h5>
+                    <h4 role="heading" aria-level="4">Just Music GmbH</h4>
+                    <h5 role="heading" aria-level="5">Musical instrument retailer</h5>
                     <p><em>Retail Salesman</em> / July 2012 - August 2013</p>
                     <br>
-                    <h3><u>Education & Certifications</u></h3>
+                    <h3 role="heading" aria-level="3"><u>Education & Certifications</u></h3>
                     <br>
-                    <h4>Full-Stack Engineer - Codecademy Career Path</h4>
+                    <h4 role="heading" aria-level="4">Full-Stack Engineer - Codecademy Career Path</h4>
                     <p>September 2023 - in progress</p>
                     <br>
-                    <h4>Java Course - Codecademy</h4>
+                    <h4 role="heading" aria-level="4">Java Course - Codecademy</h4>
                     <p><button class="dropCvBtn" onclick="dropButtonCV(this)" id="button5"
                             data-target="div5">&#171;</button>June 2023 - September 2023</p>
                     <div class="dropCV" id="div5"><a
@@ -232,51 +238,51 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                                 id="certificate" title="You can click me!"></a>
                     </div>
                     <br>
-                    <h4>Media Informatics - Ludwig-Maximilians University Munich</h4>
+                    <h4 role="heading" aria-level="4">Media Informatics - Ludwig-Maximilians University Munich</h4>
                     <p><em>Bachelor</em> / September 2014 - December 2017</p>
                     <br>
-                    <h4>Retail Salesman - Just Music GmbH</h4>
+                    <h4 role="heading" aria-level="4">Retail Salesman - Just Music GmbH</h4>
                     <p><em>Trainee</em> / September 2010 - July 2012</p>
                 </div>
             </section>
 
             <!--Skills-Section-->
-            <section class="skillsFlexWrapper">
-                <h2 class="index" id="skillsStyle">Skills</h2>
+            <section class="skillsFlexWrapper" role="region">
+                <h2 class="index" id="skillsStyle" role="heading" aria-level="2">Skills</h2>
                 <div class="softskillsFlex">
-                    <h3><u>Softskills</u></h3>
+                    <h3 role="heading" aria-level="3"><u>Softskills</u></h3>
                     <br>
-                    <ul>
-                        <li>
-                            <h4>Curiousity:</h4>
+                    <ul role="list">
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Curiousity:</h4>
                             <p>I actively seek knowledge and explore new ideas, fostering continuous learning.</p>
                         </li>
-                        <li>
-                            <h4>Quick Learner:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Quick Learner:</h4>
                             <p>I adapt swiftly to new technologies and concepts, ensuring efficient problem-solving.</p>
                         </li>
-                        <li>
-                            <h4>Diligence:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Diligence:</h4>
                             <p> I approach tasks with meticulous attention to detail, delivering high-quality results.
                             </p>
                         </li>
-                        <li>
-                            <h4>Effective Communication:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Effective Communication:</h4>
                             <p>I excel in both verbal and written communication, promoting collaboration across teams.
                             </p>
                         </li>
-                        <li>
-                            <h4>Patience:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Patience:</h4>
                             <p>I maintain composure during challenges, finding creative solutions even under pressure.
                             </p>
                         </li>
-                        <li>
-                            <h4>Teamplayer:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Teamplayer:</h4>
                             <p>I actively contribute to cross-functional teams, fostering a positive work environment.
                             </p>
                         </li>
-                        <li>
-                            <h4>Problem Solver:</h4>
+                        <li role="listitem">
+                            <h4 role="heading" aria-level="4">Problem Solver:</h4>
                             <p>I tackle complex issues methodically, consistently delivering effective solutions.</p>
                         </li>
                     </ul>
@@ -289,191 +295,200 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                 </div>
                 <div class="subWrapperSkills">
                     <div class="skillsToolsBox">
-                        <h3><u>Coding</u></h3>
+                        <h3 role="heading" aria-level="3"><u>Coding</u></h3>
                         <br>
-                        <ul class="codingFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png" alt="A HTML icon"
-                                    title="HTML" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png" alt="A CSS icon"
-                                    title="CSS" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-javascript-48.png"
+                        <ul class="codingFlex" role="list">
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-html-48.png"
+                                    alt="A HTML icon" title="HTML" class="rotateIcon"></li>
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-css-48.png"
+                                    alt="A CSS icon" title="CSS" class="rotateIcon"></li>
+                            <li role="listitem"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-javascript-48.png"
                                     alt="A Javascript icon" title="Javascript" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png" alt="A Java icon"
-                                    title="Java" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-python-48.png"
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-java-48.png"
+                                    alt="A Java icon" title="Java" class="rotateIcon"></li>
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-python-48.png"
                                     alt="A Python icon" title="Python" class="rotateIcon">
                             </li>
                         </ul>
                     </div>
+
                     <div class="skillsToolsBox">
-                        <h3><u>Frameworks</u></h3>
+                        <h3 role="heading" aria-level="3"><u>Frameworks</u></h3>
                         <br>
-                        <ul class="frameworkFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png" alt="A React icon"
-                                    title="React (in progress)" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png" alt="A Godot icon"
-                                    title="Godot-Engine (Hobby)" class="rotateIcon"></li>
+                        <ul class="frameworkFlex" role="list">
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-react-48.png"
+                                    alt="A React icon" title="React (in progress)" class="rotateIcon"></li>
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-godot-48.png"
+                                    alt="A Godot icon" title="Godot-Engine (Hobby)" class="rotateIcon"></li>
                         </ul>
                     </div>
 
                     <div class="skillsToolsBox">
-                        <h3><u>Tools</u></h3>
+                        <h3 role="heading" aria-level="3"><u>Tools</u></h3>
                         <br>
-                        <ul class="toolsFlex">
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png" alt="A Git icon"
-                                    title="Git" class="rotateIcon">
+                        <ul class="toolsFlex" role="list">
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-git-48.png"
+                                    alt="A Git icon" title="Git" class="rotateIcon">
                             </li>
-                            <li><img src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub icon"
-                                    title="GitHub" id="gitHub" class="rotateIcon">
+                            <li role="listitem"><img src="./resources/icon/SocialMedia/github-mark.png"
+                                    alt="A GitHub icon" title="GitHub" id="gitHub" class="rotateIcon">
                             </li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-trello-48.png"
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-trello-48.png"
                                     alt="A Trello icon" title="Trello" class="rotateIcon">
                             </li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-existieren-48.png"
+                            <li role="listitem"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-existieren-48.png"
                                     alt="A Jira icon" title="Jira" class="rotateIcon">
                             </li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-zendesk-48.png"
+                            <li role="listitem"><img src="./resources/icon/CodinglanguagesIcons/icons8-zendesk-48.png"
                                     alt="A Zendesk icon" title="Zendesk" class="rotateIcon"></li>
-                            <li><img src="./resources/icon/CodinglanguagesIcons/icons8-microsoft-power-apps-48.png"
+                            <li role="listitem"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-microsoft-power-apps-48.png"
                                     alt="A MSFT PowerApps icon" title="PowerApps" class="rotateIcon"></li>
                         </ul>
                     </div>
                 </div>
         </div>
         </section>
+
         <!--Projects-Section-->
-        <section>
-            <h2 class="index" id="navFour">Projects</h2>
+        <section role="region">
+            <h2 class="index" id="navFour" role="heading" aria-level="2">Projects</h2>
             <!--This portfolio website itself was created as a "portfolio"-project for the Codecademy Fullstack-Engineer Career Path-->
             <div class="wrapperProject">
                 <div>
-                    <h4>Portfolio-Website</h4>
+                    <h4 role="heading" aria-level="4">Portfolio-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/PortfolioWebsiteCropped.png"
                             alt="A screenshot of my portfolio website." class="projectImg">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
+                        <ul role="list">
+                            <li role="listitem">HTML</li>
+                            <li role="listitem">CSS</li>
+                            <li role="listitem">JS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/PortfolioWebsiteAdrianLesch" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/AdrianLesch/PortfolioWebsiteAdrianLesch" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                         </div>
                     </div>
                 </div>
                 <!--Fantasy Name Generator Project-->
                 <div>
-                    <h4>Fantasy Name Generator-Project</h4>
+                    <h4 role="heading" aria-level="4">Fantasy Name Generator-Project</h4>
                     <div class="flexProject">
                         <img src="./resources/images/FantasyNameGenerator.jpg" alt="A picture of a crazy wizard."
                             class="projectImg">
-                        <ul>
-                            <li>JS</li>
+                        <ul role="list">
+                            <li role="listitem">JS</li>
                         </ul>
                         <div class="subFlex">
                             <a href="https://github.com/AdrianLesch/FanatsyNameGenerator---MixedMessages"
-                                target="_blank"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                                target="_blank" role="button"><img
+                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                         </div>
                     </div>
                 </div>
                 <!--Paperknights-Club-Website-->
                 <div>
-                    <h4>Paperknights-Club-Website</h4>
+                    <h4 role="heading" aria-level="4">Paperknights-Club-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/Paperknights.jpeg"
                             alt="A picture of a paperknight fighting a dragon." class="projectImg">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                        <ul role="list">
+                            <li role="listitem">HTML</li>
+                            <li role="listitem">CSS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/The-Paper-Knights-Project" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/AdrianLesch/The-Paper-Knights-Project" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                             <a href="https://adrianlesch.github.io/The-Paper-Knights-Project/
-                        " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
+                        " target="_blank" role="button"><img
+                                    src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
                                     alt="An icon for GitHubPages"></a>
                         </div>
                     </div>
                 </div>
                 <!--Cityplanner-Agency-Website-->
                 <div>
-                    <h4>Cityplanner-Agency-Website</h4>
+                    <h4 role="heading" aria-level="4">Cityplanner-Agency-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CityPlanner.jpeg" alt="A picture of a renaissance cityplaner."
                             class="projectImg">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                        <ul role="list">
+                            <li role="listitem">HTML</li>
+                            <li role="listitem">CSS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/CityPlanner-Project" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/AdrianLesch/CityPlanner-Project" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
-                            <a href="https://adrianlesch.github.io/CityPlanner-Project/" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
+                            <a href="https://adrianlesch.github.io/CityPlanner-Project/" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
                                     alt="A GitHub-Pages-Icon"></a>
                         </div>
                     </div>
                 </div>
                 <!--TeaCozy-Café-Website-->
                 <div>
-                    <h4>TeaCozy-Café-Website</h4>
+                    <h4 role="heading" aria-level="4">TeaCozy-Café-Website</h4>
                     <div class="flexProject">
                         <img src="./resources/images/TeaCozy.jpeg" alt="A picture of a Tea Cozy." class="projectImg">
-                        <ul>
-                            <li>HMTL</li>
-                            <li>CSS</li>
+                        <ul role="list">
+                            <li role="listitem">HMTL</li>
+                            <li role="listitem">CSS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/TeaCozyProject.github.io" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/AdrianLesch/TeaCozyProject.github.io" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                             <a href="https://adrianlesch.github.io/TeaCozyProject.github.io/
-                        " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
+                        " target="_blank" role="button"><img
+                                    src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
                                     alt="A GitHub-Pages icon."></a>
                         </div>
                     </div>
                 </div>
                 <!--Website-Style-Guide-->
                 <div>
-                    <h4>Website-Style-Guide</h4>
+                    <h4 role="heading" aria-level="4">Website-Style-Guide</h4>
                     <div class="flexProject">
                         <img src="./resources/images/WebsiteStyleGuide.jpeg" alt="A picture of Picasso-like website."
                             class="projectImg">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                        <ul role="list">
+                            <li role="listitem">HTML</li>
+                            <li role="listitem">CSS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/codecademyWSS" target="_blank"><img
+                            <a href="https://github.com/AdrianLesch/codecademyWSS" target="_blank" role="button"><img
                                     src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                             <a href="https://adrianlesch.github.io/codecademyWSS/
-                        " target="_blank"><img src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
+                        " target="_blank" role="button"><img
+                                    src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
                                     alt="A GitHub Pages Icon"></a>
                         </div>
                     </div>
                 </div>
                 <!--Cheat-O-Sheet-Project-->
                 <div>
-                    <h4>CheatOSheet</h4>
+                    <h4 role="heading" aria-level="4">CheatOSheet</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CheatOSheet.jpeg" alt="A picture of a CheatOSheet."
                             class="projectImg">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                        <ul role="list">
+                            <li role="listitem">HTML</li>
+                            <li role="listitem">CSS</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/CheatOSheet" target="_blank"><img
+                            <a href="https://github.com/AdrianLesch/CheatOSheet" target="_blank" role="button"><img
                                     src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                             <a href="https://adrianlesch.github.io/CheatOSheet/
-                                    " target="_blank"><img
+                                    " target="_blank" role="button"><img
                                     src="./resources/icon/CodinglanguagesIcons/GithubPagesIcon.png"
                                     alt="A GitHub Pages Icon"></a>
                         </div>
@@ -481,33 +496,33 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
                 </div>
                 <!--Python-Projects-->
                 <div>
-                    <h4>Python-Projects</h4>
+                    <h4 role="heading" aria-level="4">Python-Projects</h4>
                     <div class="flexProject">
                         <img src="./resources/images/PythonProjects.jpeg"
                             alt="A picture of a Python-Symbol and Codingpictures." class="projectImg">
-                        <ul>
-                            <li>Python</li>
+                        <ul role="list">
+                            <li role="listitem">Python</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/AdrianLesch/Python-Exercise-Projects" target="_blank"><img
-                                    src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/AdrianLesch/Python-Exercise-Projects" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                         </div>
                     </div>
                 </div>
                 <!--Other-Projects-->
                 <div>
-                    <h4>Other Projects</h4>
+                    <h4 role="heading" aria-level="4">Other Projects</h4>
                     <div class="flexProject">
                         <img src="./resources/images/CodingProjects.png" alt="A picture of programm code."
                             class="projectImg">
-                        <ul>
-                            <li>JS</li>
-                            <li>Other</li>
+                        <ul role="list">
+                            <li role="listitem">JS</li>
+                            <li role="listitem">Other</li>
                         </ul>
                         <div class="subFlex">
-                            <a href="https://github.com/stars/AdrianLesch/lists/additional-projects"
-                                target="_blank"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
+                            <a href="https://github.com/stars/AdrianLesch/lists/additional-projects" target="_blank"
+                                role="button"><img src="./resources/icon/CodinglanguagesIcons/icons8-folder-30.png"
                                     alt="An icon of a folder"></a>
                         </div>
                     </div>
@@ -516,30 +531,30 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
         </section>
     </main>
 
-    <footer>
+    <footer role="region">
         <div class="contactSection">
-            <h2 id="navFive">Contact</h2>
+            <h2 id="navFive" role="heading" aria-level="2">Contact</h2>
             <p><strong>You can find me on:</strong></p>
             <!--Social-Media-Icons-->
             <div class="flexSocial">
-                <a href="https://github.com/AdrianLesch" target="_blank"><img
+                <a href="https://github.com/AdrianLesch" target="_blank" role="link"><img
                         src="./resources/icon/SocialMedia/github-mark.png" alt="A GitHub-Logo" class="socialMediaIcon"
                         title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/adrian-lesch-522369170/" target="_blank"><img
+                <a href="https://www.linkedin.com/in/adrian-lesch-522369170/" target="_blank" role="link"><img
                         src="./resources/icon/SocialMedia/LI-In-Bug.png" alt="A LinkedIn Logo" id="linkedIn"
                         title="LinkedIn"></a>
-                <a href="https://www.codecademy.com/profiles/AlgoRhythmus" target="_blank"><img
+                <a href="https://www.codecademy.com/profiles/AlgoRhythmus" target="_blank" role="link"><img
                         src="./resources/icon/SocialMedia/icons8-codecademy.png" alt="A Codecademy Logo"
                         class="socialMediaIcon" title="Codecademy"></a>
-                <a href="https://www.facebook.com/adrianlesch90" target="_blank"><img
+                <a href="https://www.facebook.com/adrianlesch90" target="_blank" role="link"><img
                         src="./resources/icon/SocialMedia/icons8-facebook-neu-48.png" alt="A Facebook Logo"
                         class="socialMediaIcon" title="Facebook"></a>
                 <a href="https://www.instagram.com/addi.lette?igsh=MXFzOXE2dmpucG9wdw%3D%3D&utm_source=qr"
-                    target="_blank"><img src="./resources/icon/SocialMedia/Instagram_Glyph_Black.png"
+                    target="_blank" role="link"><img src="./resources/icon/SocialMedia/Instagram_Glyph_Black.png"
                         alt="A Instagram Logo" class="socialMediaIcon" title="Instagram"></a>
             </div>
             <!--E-Mail-Contact-->
-            <p><strong>Or contact me via e-mail:</strong> <a href="mailto:adrian.lesch@mail.de"><img
+            <p><strong>Or contact me via e-mail:</strong> <a href="mailto:adrian.lesch@mail.de" role="link"><img
                         src="./resources/icon/SocialMedia/MSMAI001.PNG" alt="A Mail Icon" id="mailIcon"></a></p>
         </div>
 
@@ -551,11 +566,11 @@ Needlessly to say that I used some help and advice from good ol' Google, StackOv
 
         <!--Bottom-Section-->
         <div class="flexBottom">
-            <a target="_blank" href="https://icons8.com"><img
+            <a target="_blank" href="https://icons8.com" role="link"><img
                     src="./resources/icon/CodinglanguagesIcons/icons8-icon-32.png" alt="A Icon icon"
                     title="Icons from Icon8"></a>
             <p> &#169; Adrian Lesch 2024</p>
-            <a href="./stylesheet.html" target="_blank"><img
+            <a href="./stylesheet.html" target="_blank" role="link"><img
                     src="./resources/icon/CodinglanguagesIcons/StylesheetIcon.png" alt="A Stylesheet Icon"
                     title="Click here to get to my stylesheet!"></a>
         </div>
