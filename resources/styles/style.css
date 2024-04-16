@@ -250,6 +250,18 @@ h4 {
     align-items: center;
 }
 
+@media only screen and (max-width: 2768px) {
+    .flexMain{
+        flex-flow: row wrap;
+    }
+}
+
+@media only screen and (min-width: 2769px){
+    .flexMain{
+        flex-flow: column wrap;
+    }
+}
+
 .index {
     background-color: #000000;
     border-top-left-radius: 1rem;
@@ -259,9 +271,11 @@ h4 {
 
 /*Bio & CV*/
 
+.container {
+    max-width: 2000px;
+}
+
 .columns {
-    max-width: fit-content;
-    max-height: fit-content;
     padding: 2rem;
     text-align: left;
     background-color: #E8E9EB;
@@ -289,9 +303,22 @@ h4 {
     transition: 0.3s ease;
 }
 
-#cv {
-    max-width: 40rem;
+#cuVi {
+    width: 45rem;
 }
+
+@media only screen and (max-width:800px) {
+    #cuVi{
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    #cuVi{
+        width: auto;
+    }
+}
+    
 
 
 #timeCalculator {
