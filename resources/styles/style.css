@@ -490,6 +490,18 @@ h4 {
     color: black;
 }
 
+@media only screen and (min-width:345px) and (max-width:415px){
+    .buttonWrap{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .button{
+        margin-left: .5rem;
+    }
+}
+
 /*Flex-Rectangle*/
 .flexProject:hover,
 .flexProject:focus {
